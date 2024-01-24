@@ -1,0 +1,3597 @@
+[
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 110116,
+      "name": "Domino's Pizza",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/6/111026/46ab03171d9eec9cc24d2067569ef485_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/6/111026/46ab03171d9eec9cc24d2067569ef485_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.0",
+        "rating_text": "4.0",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "12.3K",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.8",
+            "reviewCount": "553",
+            "reviewTextSmall": "553 Reviews",
+            "subtext": "553 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.8",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.1",
+            "reviewCount": "11.7K",
+            "reviewTextSmall": "11.7K Reviews",
+            "subtext": "11.7K Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.1",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9400 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "C G Road, Ahmedabad",
+        "address": "2, Ground Floor, Sachet 1, C G Road, Ahmedabad",
+        "localityUrl": "ahmedabad/cg-road-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/italian/",
+          "name": "Italian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA2NFwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pasta/",
+          "name": "Pasta"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTAwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/desserts/",
+          "name": "Desserts"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "24 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/dominos-pizza-c-g-road/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/dominos-pizza-c-g-road/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F110116%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "742 m",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"110116\",\"element_type\":\"listing\",\"rank\":1}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "40% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 20089259,
+      "name": "Jay Bhavani Vadapav",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/7/110227/8a94d8da9ccf006f4a783d75e01081ac_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/7/110227/8a94d8da9ccf006f4a783d75e01081ac_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.6",
+        "rating_text": "3.6",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "767",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "3",
+            "reviewTextSmall": "3 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.6",
+            "reviewCount": "764",
+            "reviewTextSmall": "764 Reviews",
+            "subtext": "764 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.6",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9250 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Navrangpura, Ahmedabad",
+        "address": "G-1, Madhur Complex, Stadium Cross Road, Navrangpura, Ahmedabad",
+        "localityUrl": "ahmedabad/navrangpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/beverages/",
+          "name": "Beverages"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "17 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/jay-bhavani-vadapav-3-navrangpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/jay-bhavani-vadapav-3-navrangpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F20089259%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "463 m",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20089259\",\"element_type\":\"listing\",\"rank\":2}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "10% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 20691680,
+      "name": "Zaiqa - E - Biryani",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/0/20691680/bf640a7132b03019f24aefeb4f0a51a9_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/0/20691680/bf640a7132b03019f24aefeb4f0a51a9_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.6",
+        "rating_text": "3.6",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "183",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "0",
+            "reviewTextSmall": "0 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.6",
+            "reviewCount": "183",
+            "reviewTextSmall": "183 Reviews",
+            "subtext": "183 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.6",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9300 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Shahibagh, Ahmedabad",
+        "address": "S-7, Slum Clearance Site 7, Near Daria Khan Dome, Shahibagh, Ahmedabad",
+        "localityUrl": "ahmedabad/shahibagh-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiN1wiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/biryani/",
+          "name": "Biryani"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/north-indian/",
+          "name": "North Indian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "27 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/zaiqa-e-biryani-shahibagh/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/zaiqa-e-biryani-shahibagh/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F20691680%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2.1 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20691680\",\"element_type\":\"listing\",\"rank\":3}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 19403283,
+      "name": "Jugaadi Adda",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.7",
+        "rating_text": "3.7",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "3,987",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "0",
+            "reviewTextSmall": "0 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.7",
+            "reviewCount": "3,987",
+            "reviewTextSmall": "3,987 Reviews",
+            "subtext": "3,987 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.7",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9100 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Naranpura, Ahmedabad",
+        "address": "Shop 35, Sardar Shoping Complex, Gujarat Housing Boards Flats, Shastri Nagar, Naranpura, Ahmedabad",
+        "localityUrl": "ahmedabad/naranpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTAyXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/maharashtrian/",
+          "name": "Maharashtrian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "21 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/jugaadi-adda-naranpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/jugaadi-adda-naranpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F19403283%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2.8 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"19403283\",\"element_type\":\"listing\",\"rank\":4}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 110160,
+      "name": "Hocco Eatery",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/5/110155/b4a5410c46439d6b8912f4bd0071bf24_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/5/110155/b4a5410c46439d6b8912f4bd0071bf24_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.0",
+        "rating_text": "4.0",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "3,776",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.8",
+            "reviewCount": "365",
+            "reviewTextSmall": "365 Reviews",
+            "subtext": "365 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.8",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.2",
+            "reviewCount": "3,411",
+            "reviewTextSmall": "3,411 Reviews",
+            "subtext": "3,411 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.2",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9500 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "C G Road, Ahmedabad",
+        "address": "48, Municipal Market, C G Road, Ahmedabad",
+        "localityUrl": "ahmedabad/cg-road-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjMzXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/ice-cream/",
+          "name": "Ice Cream"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTAwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/desserts/",
+          "name": "Desserts"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA2NlwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/shake/",
+          "name": "Shake"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "21 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/hocco-eatery-1-c-g-road/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/hocco-eatery-1-c-g-road/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F110160%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.1 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"110160\",\"element_type\":\"listing\",\"rank\":5}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "20% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 19068588,
+      "name": "A-One Bombay Biryani",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/8/19068588/134df2f409c3a48376a320b8072f8d15_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/8/19068588/134df2f409c3a48376a320b8072f8d15_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.5",
+        "rating_text": "3.5",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "4,631",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.3",
+            "reviewCount": "28",
+            "reviewTextSmall": "28 Reviews",
+            "subtext": "28 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.3",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.7",
+            "reviewCount": "4,603",
+            "reviewTextSmall": "4,603 Reviews",
+            "subtext": "4,603 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.7",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9300 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Shahibagh, Ahmedabad",
+        "address": "Shop 7, Block 22, Government A Colony, Dariyakhan Ghummat, Near Shahibagh, Ahmedabad",
+        "localityUrl": "ahmedabad/shahibagh-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiN1wiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/biryani/",
+          "name": "Biryani"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "29 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/a-one-bombay-biryani-4-shahibagh/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/a-one-bombay-biryani-4-shahibagh/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F19068588%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2.1 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"19068588\",\"element_type\":\"listing\",\"rank\":6}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 20632332,
+      "name": "Mohabatwala",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/2/20632332/36c79c28b7f1eae5d0d2385f72d74960_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/2/20632332/36c79c28b7f1eae5d0d2385f72d74960_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.7",
+        "rating_text": "3.7",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "83",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "0",
+            "reviewTextSmall": "0 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.7",
+            "reviewCount": "83",
+            "reviewTextSmall": "83 Reviews",
+            "subtext": "83 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.7",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9350 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Shahibagh, Ahmedabad",
+        "address": "Shop 2, Police Quarters, Government Colony, Shahibagh, Ahmedabad",
+        "localityUrl": "ahmedabad/shahibagh-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiN1wiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/biryani/",
+          "name": "Biryani"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/beverages/",
+          "name": "Beverages"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "31 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/mohabatwala-shahibagh/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/mohabatwala-shahibagh/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F20632332%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2.1 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20632332\",\"element_type\":\"listing\",\"rank\":7}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "15% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 112976,
+      "name": "Prince Bhajipav",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/6/112976/34d5f38cc3bba83d1ac7c27b087c45a0_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/6/112976/34d5f38cc3bba83d1ac7c27b087c45a0_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.4",
+        "rating_text": "3.4",
+        "rating_subtitle": "Average",
+        "rating_color": "CDD614",
+        "votes": "51.2K",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.2",
+            "reviewCount": "496",
+            "reviewTextSmall": "496 Reviews",
+            "subtext": "496 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.2",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.5",
+            "reviewCount": "50.7K",
+            "reviewTextSmall": "50.7K Reviews",
+            "subtext": "50.7K Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.5",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9300 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Bodakdev, Ahmedabad",
+        "address": "Near Mother Milk Palace, Rudra Plaza, Judges Bungalow Cross Road, Bodakdev, Ahmedabad",
+        "localityUrl": "ahmedabad/bodakdev-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/north-indian/",
+          "name": "North Indian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/chinese/",
+          "name": "Chinese"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDhcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/gujarati/",
+          "name": "Gujarati"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTI4XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sichuan/",
+          "name": "Sichuan"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "29 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/prince-bhajipav-bodakdev/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/prince-bhajipav-bodakdev/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F112976%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "5.3 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"112976\",\"element_type\":\"listing\",\"rank\":8}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 110105,
+      "name": "Das Khaman",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/5/110105/a7f73d08c114da93bccc6cf9d213c3c4_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/5/110105/a7f73d08c114da93bccc6cf9d213c3c4_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.3",
+        "rating_text": "4.3",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "8,857",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "4.2",
+            "reviewCount": "311",
+            "reviewTextSmall": "311 Reviews",
+            "subtext": "311 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "4.2",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.4",
+            "reviewCount": "8,546",
+            "reviewTextSmall": "8,546 Reviews",
+            "subtext": "8,546 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.4",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9250 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Navrangpura, Ahmedabad",
+        "address": "2, Trade Centre, Stadium Road, Navrangpura, Ahmedabad",
+        "localityUrl": "ahmedabad/navrangpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDhcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/gujarati/",
+          "name": "Gujarati"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "11 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/das-khaman-navrangpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/das-khaman-navrangpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F110105%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "415 m",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"110105\",\"element_type\":\"listing\",\"rank\":9}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 18954174,
+      "name": "New Bombay Biryani",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/4/18954174/082469bf44f904c6f6b7a1a3bacb9801_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/4/18954174/082469bf44f904c6f6b7a1a3bacb9801_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.9",
+        "rating_text": "3.9",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "4,037",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.9",
+            "reviewCount": "86",
+            "reviewTextSmall": "86 Reviews",
+            "subtext": "86 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.9",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.8",
+            "reviewCount": "3,951",
+            "reviewTextSmall": "3,951 Reviews",
+            "subtext": "3,951 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.8",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9200 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Shahpur, Ahmedabad",
+        "address": "Shahpur Bahai Center, Near Shah Fatah Masjid, Shahpur, Ahmedabad",
+        "localityUrl": "ahmedabad/shahpur-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiN1wiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/biryani/",
+          "name": "Biryani"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "26 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/new-bombay-biryani-shahpur/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/new-bombay-biryani-shahpur/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F18954174%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.6 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"18954174\",\"element_type\":\"listing\",\"rank\":10}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 19372902,
+      "name": "Harmony Resto Cafe",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/2/19372902/bec7f3a0fd951fbc405fa29208d342a7_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/2/19372902/bec7f3a0fd951fbc405fa29208d342a7_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.2",
+        "rating_text": "4.2",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "2,082",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "4.2",
+            "reviewCount": "230",
+            "reviewTextSmall": "230 Reviews",
+            "subtext": "230 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "4.2",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.1",
+            "reviewCount": "1,852",
+            "reviewTextSmall": "1,852 Reviews",
+            "subtext": "1,852 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.1",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9500 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Navrangpura, Ahmedabad",
+        "address": "3-4, Gala Business Centre, St. Xavier Corner, Opposite Zodiac Plaza, Navrangpura, Ahmedabad",
+        "localityUrl": "ahmedabad/navrangpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTY4XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/burger/",
+          "name": "Burger"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA0MFwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/coffee/",
+          "name": "Coffee"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTg5XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/panini/",
+          "name": "Panini"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "26 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/harmony-resto-cafe-navrangpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/harmony-resto-cafe-navrangpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F19372902%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.6 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"19372902\",\"element_type\":\"listing\",\"rank\":11}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 19901905,
+      "name": "La Milano Pizzeria",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/1/19708611/58e9a8bb27bf7435a139c53b701a722d_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/1/19708611/58e9a8bb27bf7435a139c53b701a722d_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.0",
+        "rating_text": "4.0",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "3,634",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "4.1",
+            "reviewCount": "134",
+            "reviewTextSmall": "134 Reviews",
+            "subtext": "134 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "4.1",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.9",
+            "reviewCount": "3,500",
+            "reviewTextSmall": "3,500 Reviews",
+            "subtext": "3,500 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.9",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9400 for two"
+      },
+      "cfo": {
+        "text": "\u20b9150 for one"
+      },
+      "locality": {
+        "name": "Navrangpura, Ahmedabad",
+        "address": "Ground Floor 1, Campur Corner, HL College Road, Navrangpura, Ahmedabad",
+        "localityUrl": "ahmedabad/navrangpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA2NFwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pasta/",
+          "name": "Pasta"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/italian/",
+          "name": "Italian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMVwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/american/",
+          "name": "American"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNzNcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/mexican/",
+          "name": "Mexican"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTAwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/desserts/",
+          "name": "Desserts"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/beverages/",
+          "name": "Beverages"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b9150 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "25 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/la-milano-pizzeria-navrangpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/la-milano-pizzeria-navrangpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F19901905%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.5 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"e4b34a4b-c396-44bd-b220-2d8f7a0a2260\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"19901905\",\"element_type\":\"listing\",\"rank\":12}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 20464497,
+      "name": "Bole To Vadapav",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/2/19883512/bc1352ae1af1e10012a57d361c93d28d_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/2/19883512/bc1352ae1af1e10012a57d361c93d28d_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.0",
+        "rating_text": "4.0",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "302",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "1",
+            "reviewTextSmall": "1 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.0",
+            "reviewCount": "301",
+            "reviewTextSmall": "301 Reviews",
+            "subtext": "301 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.0",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9100 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Naranpura, Ahmedabad",
+        "address": "26, Ekta Festival, 132 Feet Ring Road, Naranpura, Ahmedabad",
+        "localityUrl": "ahmedabad/naranpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/beverages/",
+          "name": "Beverages"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "20 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/bole-to-vadapav-naranpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/bole-to-vadapav-naranpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F20464497%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20464497\",\"element_type\":\"listing\",\"rank\":1}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 20530519,
+      "name": "Martino'z Pizza",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/9/20530519/33d86bcffc824ed629089afa69c72515_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/9/20530519/33d86bcffc824ed629089afa69c72515_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.5",
+        "rating_text": "3.5",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "455",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "3",
+            "reviewTextSmall": "3 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.5",
+            "reviewCount": "452",
+            "reviewTextSmall": "452 Reviews",
+            "subtext": "452 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.5",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9400 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Gulbai Tekra, Ahmedabad",
+        "address": "Ground Floor, University Road, Opposite L D Engineering College, Gulbai Tekra, Ahmedabad",
+        "localityUrl": "ahmedabad/gulbai-tekra-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNzNcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/mexican/",
+          "name": "Mexican"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "28 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/martinoz-pizza-gulbai-tekra/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/martinoz-pizza-gulbai-tekra/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F20530519%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20530519\",\"element_type\":\"listing\",\"rank\":2}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 110410,
+      "name": "Sam's Pizza",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/9/110409/6c08cb683b38b537c9dfd4955ca1eb63_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/9/110409/6c08cb683b38b537c9dfd4955ca1eb63_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.9",
+        "rating_text": "3.9",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "5,821",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.8",
+            "reviewCount": "693",
+            "reviewTextSmall": "693 Reviews",
+            "subtext": "693 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.8",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.9",
+            "reviewCount": "5,128",
+            "reviewTextSmall": "5,128 Reviews",
+            "subtext": "5,128 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.9",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9500 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Navrangpura, Ahmedabad",
+        "address": "Vraj Avenue, Near St. Xavier's Ladies Hostel, Navrangpura, Ahmedabad",
+        "localityUrl": "ahmedabad/navrangpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "23 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/sams-pizza-navrangpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/sams-pizza-navrangpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F110410%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "935 m",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"110410\",\"element_type\":\"listing\",\"rank\":3}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 18536774,
+      "name": "Shreejikrupa",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/4/18536774/8d0c14fb18c1e7cd0e63ceec1c892e34_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/4/18536774/8d0c14fb18c1e7cd0e63ceec1c892e34_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.8",
+        "rating_text": "3.8",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "3,665",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.3",
+            "reviewCount": "43",
+            "reviewTextSmall": "43 Reviews",
+            "subtext": "43 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.3",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.2",
+            "reviewCount": "3,622",
+            "reviewTextSmall": "3,622 Reviews",
+            "subtext": "3,622 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.2",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9200 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Ashram Road, Ahmedabad",
+        "address": "7, Ground Floor, Ratna Business Square, Near Chamber Of Commerce, Ashram Road, Ahmedabad",
+        "localityUrl": "ahmedabad/ashram-road-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "22 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/shreejikrupa-ashram-road/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/shreejikrupa-ashram-road/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F18536774%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.5 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"18536774\",\"element_type\":\"listing\",\"rank\":4}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/695598f38d29d0e5d3f8ffe57cfdb94c1613145422.png",
+          "aspect_ratio": 2.0625
+        },
+        "text": "Restaurant partner follows WHO protocol"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 111280,
+      "name": "Modi Sandwich & Pizza",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/0/111280/5b810f15c8bb7f9e4a10917b7011f00e_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/0/111280/5b810f15c8bb7f9e4a10917b7011f00e_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.6",
+        "rating_text": "3.6",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "30.8K",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.2",
+            "reviewCount": "460",
+            "reviewTextSmall": "460 Reviews",
+            "subtext": "460 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.2",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.9",
+            "reviewCount": "30.3K",
+            "reviewTextSmall": "30.3K Reviews",
+            "subtext": "30.3K Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.9",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9300 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Paldi, Ahmedabad",
+        "address": "1, Bhatta, Paldi, Ahmedabad",
+        "localityUrl": "ahmedabad/paldi-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/chinese/",
+          "name": "Chinese"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTY4XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/burger/",
+          "name": "Burger"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTAyNlwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/hot-dogs/",
+          "name": "Hot dogs"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcxXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/finger-food/",
+          "name": "Finger Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTI4XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sichuan/",
+          "name": "Sichuan"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "31 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/modi-sandwich-pizza-paldi/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/modi-sandwich-pizza-paldi/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F111280%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "4.2 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"111280\",\"element_type\":\"listing\",\"rank\":5}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 18603039,
+      "name": "Mahalaxmi Bhaji Pav-Manekchowk Wala",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/9/18603039/55307b06a976df75450a1e45c749e1ec_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/9/18603039/55307b06a976df75450a1e45c749e1ec_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.3",
+        "rating_text": "4.3",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "21.9K",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "4.3",
+            "reviewCount": "322",
+            "reviewTextSmall": "322 Reviews",
+            "subtext": "322 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "4.3",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.2",
+            "reviewCount": "21.5K",
+            "reviewTextSmall": "21.5K Reviews",
+            "subtext": "21.5K Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.2",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9400 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Ellis Bridge, Ahmedabad",
+        "address": "9, Ground Floor, Dev Complex, Near Parimal Garden, Ellis Bridge, Ahmedabad",
+        "localityUrl": "ahmedabad/ellis-bridge-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "25 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/mahalaxmi-bhaji-pav-manekchowk-wala-ellis-bridge/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/mahalaxmi-bhaji-pav-manekchowk-wala-ellis-bridge/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F18603039%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2.7 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"18603039\",\"element_type\":\"listing\",\"rank\":6}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 20364973,
+      "name": "HL Frankie",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/7/19639627/a31faa52e9374f716cac6d5e194cff07_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/7/19639627/a31faa52e9374f716cac6d5e194cff07_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.1",
+        "rating_text": "4.1",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "1,683",
+        "subtext": "REVIEW",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "2",
+            "reviewTextSmall": "2 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.1",
+            "reviewCount": "1,681",
+            "reviewTextSmall": "1,681 Reviews",
+            "subtext": "1,681 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.1",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9500 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Navrangpura, Ahmedabad",
+        "address": "GF-01, Anhil Complex, Jain Dairy Street, Navrangpura, Ahmedabad",
+        "localityUrl": "ahmedabad/navrangpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTY4XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/burger/",
+          "name": "Burger"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/chinese/",
+          "name": "Chinese"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/beverages/",
+          "name": "Beverages"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "22 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/hl-frankie-navrangpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/hl-frankie-navrangpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F20364973%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "860 m",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20364973\",\"element_type\":\"listing\",\"rank\":7}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 110805,
+      "name": "Anand Bhajipav & Pulav Ankurwala",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/5/110805/d9634e3b96c29b018d9cc08406a0842b_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/5/110805/d9634e3b96c29b018d9cc08406a0842b_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.0",
+        "rating_text": "4.0",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "9,902",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "3.8",
+            "reviewCount": "279",
+            "reviewTextSmall": "279 Reviews",
+            "subtext": "279 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "3.8",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.1",
+            "reviewCount": "9,623",
+            "reviewTextSmall": "9,623 Reviews",
+            "subtext": "9,623 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.1",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9300 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Naranpura, Ahmedabad",
+        "address": "6 & 7, Adishwar Complex, Ankur Road, Naranpura, Ahmedabad",
+        "localityUrl": "ahmedabad/naranpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/north-indian/",
+          "name": "North Indian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/south-indian/",
+          "name": "South Indian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/chinese/",
+          "name": "Chinese"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "24 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/anand-bhajipav-pulav-ankurwala-naranpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/anand-bhajipav-pulav-ankurwala-naranpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F110805%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2.7 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"110805\",\"element_type\":\"listing\",\"rank\":8}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 18557653,
+      "name": "RP's Pizzeria",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/3/18557653/0af2881637bd061a29cdea1679c792e7_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/3/18557653/0af2881637bd061a29cdea1679c792e7_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.2",
+        "rating_text": "4.2",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "13.4K",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "4.2",
+            "reviewCount": "1,727",
+            "reviewTextSmall": "1,727 Reviews",
+            "subtext": "1,727 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "4.2",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.2",
+            "reviewCount": "11.7K",
+            "reviewTextSmall": "11.7K Reviews",
+            "subtext": "11.7K Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.2",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9500 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Navrangpura, Ahmedabad",
+        "address": "Ground Floor, Yash Aqua, Near Vijay Cross Road, Navrangpura, Ahmedabad",
+        "localityUrl": "ahmedabad/navrangpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiODJcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pizza/",
+          "name": "Pizza"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTVcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/italian/",
+          "name": "Italian"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA2NFwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/pasta/",
+          "name": "Pasta"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "25 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/rps-pizzeria-navrangpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/rps-pizzeria-navrangpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F18557653%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.8 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"18557653\",\"element_type\":\"listing\",\"rank\":9}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 18371316,
+      "name": "Behrouz Biryani",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/0/18371310/a8c84349c1138e70cf3870a850f5e29d_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/0/18371310/a8c84349c1138e70cf3870a850f5e29d_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.9",
+        "rating_text": "3.9",
+        "rating_subtitle": "Good",
+        "rating_color": "9ACD32",
+        "votes": "8,648",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "0",
+            "reviewTextSmall": "0 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.9",
+            "reviewCount": "8,648",
+            "reviewTextSmall": "8,648 Reviews",
+            "subtext": "8,648 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.9",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9750 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "C G Road, Ahmedabad",
+        "address": "Plot 11, 3-6, Zodiac Square, Commerce College, Navarangpura, Opposite Karamyog Society, C G Road, Ahmedabad",
+        "localityUrl": "ahmedabad/cg-road-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiN1wiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/biryani/",
+          "name": "Biryani"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTc4XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/kebab/",
+          "name": "Kebab"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/north-indian/",
+          "name": "North Indian"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "27 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/behrouz-biryani-c-g-road/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/behrouz-biryani-c-g-road/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F18371316%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.7 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"18371316\",\"element_type\":\"listing\",\"rank\":10}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 20711640,
+      "name": "Vipul Dudhiya Sweets",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/6/111866/17116d8fcc94f6cfce2ed9471ebe0b37_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/6/111866/17116d8fcc94f6cfce2ed9471ebe0b37_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "4.3",
+        "rating_text": "4.3",
+        "rating_subtitle": "Very Good",
+        "rating_color": "5BA829",
+        "votes": "134",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "",
+            "reviewCount": "0",
+            "reviewTextSmall": "0 Reviews",
+            "subtext": "Does not offer Dining",
+            "color": "",
+            "ratingV2": "-",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "grey",
+              "tint": "500"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "4.3",
+            "reviewCount": "134",
+            "reviewTextSmall": "134 Reviews",
+            "subtext": "134 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "4.3",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "700"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9300 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Naranpura, Ahmedabad",
+        "address": "Shop 1, Ground Floor, Ekta Fastival, Pragatinagar Cross Road, Opposite Gujarat Housing Board, Naranpura, Ahmedabad",
+        "localityUrl": "ahmedabad/naranpura-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTAxNVwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/mithai/",
+          "name": "Mithai"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDhcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/gujarati/",
+          "name": "Gujarati"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "20 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/vipul-dudhiya-sweets-naranpura/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/vipul-dudhiya-sweets-naranpura/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F20711640%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "2.6 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"20711640\",\"element_type\":\"listing\",\"rank\":11}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [],
+    "isDisabled": false,
+    "bottomContainers": []
+  },
+  {
+    "type": "restaurant",
+    "info": {
+      "resId": 19152349,
+      "name": "Tea Post",
+      "image": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/3/112843/acc19ec8e3df68375b57566d1fac324d_o2_featured_v2.jpg"
+      },
+      "o2FeaturedImage": {
+        "url": "https://b.zmtcdn.com/data/pictures/chains/3/112843/acc19ec8e3df68375b57566d1fac324d_o2_featured_v2.jpg"
+      },
+      "rating": {
+        "has_fake_reviews": 0,
+        "aggregate_rating": "3.2",
+        "rating_text": "3.2",
+        "rating_subtitle": "Average",
+        "rating_color": "CDD614",
+        "votes": "541",
+        "subtext": "REVIEWS",
+        "is_new": false
+      },
+      "ratingNew": {
+        "newlyOpenedObj": null,
+        "suspiciousReviewObj": null,
+        "ratings": {
+          "DINING": {
+            "rating_type": "DINING",
+            "rating": "2.7",
+            "reviewCount": "4",
+            "reviewTextSmall": "4 Reviews",
+            "subtext": "4 Dining Reviews",
+            "color": "#1C1C1C",
+            "ratingV2": "2.7",
+            "subtitle": "DINING",
+            "sideSubTitle": "Dining Ratings",
+            "bgColorV2": {
+              "type": "yellow",
+              "tint": "600"
+            },
+            "newOnDining": false
+          },
+          "DELIVERY": {
+            "rating_type": "DELIVERY",
+            "rating": "3.6",
+            "reviewCount": "537",
+            "reviewTextSmall": "537 Reviews",
+            "subtext": "537 Delivery Reviews",
+            "color": "#E23744",
+            "ratingV2": "3.6",
+            "subtitle": "DELIVERY",
+            "sideSubTitle": "Delivery Ratings",
+            "bgColorV2": {
+              "type": "green",
+              "tint": "600"
+            },
+            "newOnDelivery": false
+          }
+        }
+      },
+      "cft": {
+        "text": "\u20b9350 for two"
+      },
+      "cfo": {
+        "text": "\u20b950 for one"
+      },
+      "locality": {
+        "name": "Ashram Road, Ahmedabad",
+        "address": "39, Ground Floor, Mangalmurti Complex, Near Shiv Cinema, Ashram Road, Ahmedabad",
+        "localityUrl": "ahmedabad/ashram-road-restaurants"
+      },
+      "timing": {
+        "text": "",
+        "color": ""
+      },
+      "cuisine": [
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTYzXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/tea/",
+          "name": "Tea"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA0MFwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/coffee/",
+          "name": "Coffee"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMTA2NlwiXX0iXQ%3D%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/shake/",
+          "name": "Shake"
+        },
+        { 
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMjcwXCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/beverages/",
+          "name": "Beverages"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiMzA0XCJdfSJd",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/sandwich/",
+          "name": "Sandwich"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiNDBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/fast-food/",
+          "name": "Fast Food"
+        },
+        {
+          "deeplink": "zomato://search?deeplink_filters=WyJ7XCJjb250ZXh0XCI6XCJhbGxcIn0iLCJ7XCJjdWlzaW5lX2lkXCI6W1wiOTBcIl19Il0%3D",
+          "url": "https://www.zomato.com/ahmedabad/restaurants/street-food/",
+          "name": "Street Food"
+        }
+      ],
+      "should_ban_ugc": false,
+      "costText": {
+        "text": "\u20b950 for one"
+      }
+    },
+    "order": {
+      "deliveryTime": "30 min",
+      "isServiceable": true,
+      "hasOnlineOrdering": true,
+      "actionInfo": {
+        "text": "Order Now",
+        "clickUrl": "/ahmedabad/tea-post-3-ashram-road/order"
+      }
+    },
+    "gold": [],
+    "takeaway": [],
+    "cardAction": {
+      "text": "",
+      "clickUrl": "/ahmedabad/tea-post-3-ashram-road/order",
+      "clickActionDeeplink": "https://link.zomato.com/xqzv/v17twtu8?deep_link_value=zomato%3A%2F%2Forder%2F19152349%3Futm_campaign%3D58dc26e7bf655ddafe80b35b59f589cb%26utm_source%3Dmweb%26utm_medium%3DMwebSearchResCard"
+    },
+    "distance": "1.2 km",
+    "isPromoted": false,
+    "promotedText": "",
+    "trackingData": [
+      {
+        "table_name": "zsearch_events_log",
+        "payload": "{\"search_id\":\"8702c50e-14f5-4255-bb03-89b629283a56\",\"location_type\":\"delivery_cell\",\"location_id\":\"4133887237286789120\",\"page_type\":\"delivery\",\"app_type\":\"new_web_consumer\",\"section\":\"restaurants\",\"entity_type\":\"restaurant\",\"entity_id\":\"19152349\",\"element_type\":\"listing\",\"rank\":12}",
+        "event_names": {
+          "tap": "{\"action\":\"tap\"}",
+          "impression": "{\"action\":\"impression\"}"
+        }
+      }
+    ],
+    "allCTA": [],
+    "promoOffer": "",
+    "checkBulkOffers": true,
+    "bulkOffers": [
+      {
+        "text": "50% OFF",
+        "color": {
+          "tint": "500",
+          "type": "blue"
+        }
+      }
+    ],
+    "isDisabled": false,
+    "bottomContainers": [
+      {
+        "image": {
+          "url": "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png",
+          "aspect_ratio": 2.66666666667
+        },
+        "text": "Follows all Max Safety measures to ensure your food is safe"
+      }
+    ]
+  }
+]

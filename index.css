@@ -25,27 +25,37 @@
   color: black;
 }
 
+.login-btn {
+  padding: 0 12px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
 .search-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-
+.search-btn {
+  cursor: pointer;
+}
 #search {
   width: 250px;
   margin: 10px;
 }
 
-.res-container {
+.res-container,
+.shimmer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.res-card {
+.res-card,
+.shimmer-card {
   width: 230px;
-  margin: 2px;
+  margin: 5px;
   background-color: rgb(248, 248, 248);
   border-radius: 15px;
   /* display: flex;
@@ -65,8 +75,15 @@
   text-align: center;
 }
 
-.filter-btn{
+.filter-btn {
   margin: 10px;
   cursor: pointer;
 }
 
+.shimmer-container {
+  justify-content: center;
+}
+
+.shimmer-card {
+  height: 300px;
+}

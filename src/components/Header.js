@@ -1,13 +1,14 @@
+import { useState } from "react";
 import { LOGO_URL } from "../utils/links";
 
 const Header = () => {
+  const [btnName, setBtnName] = useState("Login");
+  console.log("rendered");
+
   return (
     <div className="header">
       <div className="logo">
-        <img
-          className="logo-img"
-          src={LOGO_URL}
-        />
+        <img className="logo-img" src={LOGO_URL} />
       </div>
       <div className="nav-container">
         <ul className="nav-items">
@@ -23,6 +24,14 @@ const Header = () => {
           <li>
             <a href="#">Cart</a>
           </li>
+          <button
+            className="login-btn"
+            onClick={() => {
+              btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
+            }}
+          >
+            {btnName}
+          </button>
         </ul>
       </div>
     </div>

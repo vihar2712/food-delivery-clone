@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
+import ZomatoBody from "./components/ZomatoBody";
+import SwiggyBody from "./components/SwiggyBody";
 import Body from "./components/Body";
 
 /*
@@ -31,6 +34,9 @@ const AppLayout = () => {
   return (
     <div>
       <Header />
+      {/* <SearchBar /> */}
+      {/* <ZomatoBody/> */}
+      {/* <SwiggyBody/> */}
       <Body />
     </div>
   );

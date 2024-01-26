@@ -1,4 +1,6 @@
 const SwiggyCardContainer = (props) => {
+  console.log(props.resData.info);
+
   const { name, cloudinaryImageId, avgRating, cuisines, costForTwo } =
     props.resData.info;
 

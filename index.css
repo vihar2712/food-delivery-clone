@@ -51,7 +51,10 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.res-link {
+  text-decoration: none;
+  color: black;
+}
 .res-card,
 .shimmer-card {
   width: 230px;
@@ -86,4 +89,22 @@
 
 .shimmer-card {
   height: 300px;
+}
+
+.res-info {
+  text-align: center;
+}
+
+.food-category {
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.food-item {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 0 15px;
+  border-radius: 15px;
 }

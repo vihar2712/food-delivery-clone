@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import SwiggyCardContainer from "./SwiggyCardContainer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   // const [restaurants, setRestaurants] = useState(zomatoData);
@@ -19,6 +20,34 @@ const Body = () => {
     const data = await fetch(
       "https://www.swiggy.com/api/seo/getListing?lat=23.144477092557135&lng=72.59576804274302"
     );
+    // const data = await fetch(
+    //   "https://www.swiggy.com/api/seo/getListing?lat=23.144477092557135&lng=72.59576804274302",
+    //   {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: {
+    //       isFiltered: false,
+    //       facets: {},
+    //       seoParams: {
+    //         apiName: "CityPage",
+    //         brandId: "",
+    //         seoUrl: "www.swiggy.com/city/ahmedabad/veg-restaurants",
+    //         pageType: "CITY_PURE_VEG_PAGE",
+    //       },
+    //       widgetOffset: {
+    //         NewListingView_category_bar_chicletranking_TwoRows: "",
+    //         NewListingView_category_bar_chicletranking_TwoRows_Rendition: "",
+    //         Restaurant_Group_WebView_SEO_PB_Theme: "",
+    //         collectionV5RestaurantListWidget_SimRestoRelevance_food_seo: "41",
+    //         inlineFacetFilter: "",
+    //         restaurantCountWidget: "",
+    //       },
+    //       nextOffset: "CJY7ELQ4KICg9vn0sJCIcjDUEDgD",
+    //     },
+    //   }
+    // );
     const jsonData = await data.json();
     allRestaurants = await jsonData?.data?.success?.cards[1]?.card?.card
       ?.gridElements?.infoWithStyle?.restaurants;
@@ -26,7 +55,7 @@ const Body = () => {
     setRestaurants(allRestaurants);
     setFilteredRestaurants(allRestaurants);
   };
-
+  const changeFn = (changeValue, restaurant) => {};
   useEffect(() => {
     // console.log("useEffect called");
     fetchData();
@@ -83,7 +112,13 @@ const Body = () => {
       </button>
       <div className="res-container">
         {filteredRestaurants.map((restaurant) => (
-          <SwiggyCardContainer key={restaurant.info.id} resData={restaurant} />
+          <Link
+            key={restaurant.info.id}
+            to={"/restaurants/" + restaurant.info.id}
+            className="res-link"
+          >
+            <SwiggyCardContainer resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>

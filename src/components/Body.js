@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import SwiggyCardContainer from "./SwiggyCardContainer";
 import { Link } from "react-router-dom";
+import { SWIGGY_API_URL } from "../utils/links";
 
 const Body = () => {
   // const [restaurants, setRestaurants] = useState(zomatoData);
@@ -17,9 +18,7 @@ const Body = () => {
   let allRestaurants = [];
 
   const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/api/seo/getListing?lat=23.144477092557135&lng=72.59576804274302"
-    );
+    const data = await fetch(SWIGGY_API_URL);
     // const data = await fetch(
     //   "https://www.swiggy.com/api/seo/getListing?lat=23.144477092557135&lng=72.59576804274302",
     //   {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
+import { SWIGGY_MENU_URL } from "../utils/links";
 
 const RestaurantMenu = () => {
   const [resInfo, setResInfo] = useState(null);
@@ -12,17 +13,13 @@ const RestaurantMenu = () => {
     fetchData();
   }, []);
   const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=23.0747676&lng=72.535598&restaurantId=" +
-        id +
-        "&isMenuUx4=true&submitAction=ENTER"
-    );
+    const data = await fetch(SWIGGY_MENU_URL + id);
     const jsonData = await data.json();
     console.log(jsonData);
 
-    const info = jsonData?.data?.cards[2]?.card?.card?.info;
+    const info = jsonData?.data?.cards[0]?.card?.card?.info;
     let menu =
-      jsonData?.data?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR.cards;
+      jsonData?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR.cards;
     // console.log(menu[0]);
     // console.log(menu);
     // console.log(menu);

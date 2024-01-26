@@ -108,3 +108,10 @@
   padding: 0 15px;
   border-radius: 15px;
 }
+
+.user-card {
+  border: 1px solid black;
+  padding: 0 12px;
+  text-align: center;
+  margin: 5px;
+}

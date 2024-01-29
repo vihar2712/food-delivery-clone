@@ -5,6 +5,7 @@ import Shimmer from "./Shimmer";
 import SwiggyCardContainer from "./SwiggyCardContainer";
 import { Link } from "react-router-dom";
 import { SWIGGY_API_URL } from "../utils/links";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   // const [restaurants, setRestaurants] = useState(zomatoData);
@@ -13,8 +14,11 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [change, setChange] = useState(true);
 
-  console.log("2");
-
+  // console.log("2");
+  // debugger;
+  const onlineStatus = useOnlineStatus();
+  // debugger;
+  // console.log(onlineStatus);
   let allRestaurants = [];
 
   const fetchData = async () => {
@@ -54,11 +58,17 @@ const Body = () => {
     setRestaurants(allRestaurants);
     setFilteredRestaurants(allRestaurants);
   };
-  const changeFn = (changeValue, restaurant) => {};
+
   useEffect(() => {
-    // console.log("useEffect called");
-    fetchData();
-  }, []);
+    // console.log("useEffect called inside body");
+    if (onlineStatus) fetchData();
+  }, [onlineStatus]);
+
+  if (onlineStatus === false)
+    return <h1>You seem offline. Please check your internet connection</h1>;
+
+  // console.log(restaurants.length);
+
   return restaurants.length === 0 ? (
     <Shimmer />
   ) : (

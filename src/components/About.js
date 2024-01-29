@@ -15,13 +15,13 @@ import UserClass from "./UserClass";
 class AboutClass extends Component {
   constructor(props) {
     super(props);
-    console.log("Parent Constructor");
+    // console.log("Parent Constructor");
   }
   componentDidMount() {
-    console.log("Parent component didMount");
+    // console.log("Parent component didMount");
   }
   render() {
-    console.log("Parent Rendered");
+    // console.log("Parent Rendered");
 
     return (
       <div>
@@ -29,8 +29,6 @@ class AboutClass extends Component {
         {/* <User name="Vihar Shah - function" location="Ahmedabad - function" age="45-function"/> */}
         <UserClass name="First" location="Ahmedabad - class" age="45-class" />
         <UserClass name="Second" location="Ahmedabad - class" age="45-class" />
-        <UserClass name="Third" location="Ahmedabad - class" age="45-class" />
-        <UserClass name="Fourth" location="Ahmedabad - class" age="45-class" />
       </div>
     );
   }

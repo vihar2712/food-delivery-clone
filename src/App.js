@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
+// import Shimmer from "./components/Shimmer";
 
 /*
 -Header
@@ -36,11 +37,13 @@ import RestaurantMenu from "./components/RestaurantMenu";
   -Copyright
 */
 
+const Grocery = lazy(() => import("./components/Grocery"));
+
 const AppLayout = () => {
   return (
     <div>
       <Header />
-      <Outlet /> 
+      <Outlet />
       {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
     </div>
   );
@@ -54,7 +57,15 @@ const router = createBrowserRouter([
       { path: "/", element: <Body /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
-      {path: "/restaurants/:id",element:<RestaurantMenu/>}
+      { path: "/restaurants/:id", element: <RestaurantMenu /> },
+      {
+        path: "/grocery",
+        element: (
+          <Suspense fallback={<h1>Loading....</h1>}>
+            <Grocery />
+          </Suspense>
+        ),
+      },
     ],
     errorElement: <Error />,
   },

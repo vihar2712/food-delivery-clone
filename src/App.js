@@ -63,9 +63,9 @@ const AppLayout = () => {
         }}
       >
         <Header />
+        <Outlet />
+        {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
       </UserContext.Provider>
-      <Outlet />
-      {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
     </div>
   );
 };

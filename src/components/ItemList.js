@@ -28,9 +28,9 @@ const ItemList = ({ data }) => {
           </button>
         ) : (
           <div className="bg-white shadow-md rounded-md w-6/12 py-2 absolute -bottom-2 left-1/4 font-bold hover:shadow-lg flex justify-around text-lg">
-            <div onClick={decrementCounter} className="text-xl hover:scale-95"> - </div>
+            <div onClick={decrementCounter} className="text-xl hover:scale-90"> - </div>
             <div>{counter}</div>
-            <dov onClick={incrementCounter} className="text-xl hover:scale-95 "> + </dov>
+            <dov onClick={incrementCounter} className="text-xl hover:scale-90 "> + </dov>
           </div>
         )}
       </div>

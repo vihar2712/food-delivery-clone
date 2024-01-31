@@ -76,7 +76,7 @@ const Body = () => {
     return <h1>You seem offline. Please check your internet connection</h1>;
 
   const user = useContext(UserContext);
-  // console.log(user);
+  console.log(user);
   const { loggedInUser, setUserInfo, loginTime } = user;
   // console.log(restaurants);
 

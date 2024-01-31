@@ -1,7 +1,9 @@
 // import User from "./User";
 import { Component } from "react";
 import UserClass from "./UserClass";
+import UserContext from "../utils/UserContext";
 
+// Functional Component
 // const About = () => {
 //   return (
 //     <div>
@@ -12,6 +14,7 @@ import UserClass from "./UserClass";
 //   );
 // };
 
+// Class based component
 class AboutClass extends Component {
   constructor(props) {
     super(props);
@@ -26,9 +29,12 @@ class AboutClass extends Component {
     return (
       <div>
         <h1>About us page</h1>
+        <UserContext.Consumer>
+          {({ loggedInUser,loginTime }) => <h1>Hello {loggedInUser}  at {loginTime}</h1>}
+        </UserContext.Consumer>
         {/* <User name="Vihar Shah - function" location="Ahmedabad - function" age="45-function"/> */}
         <UserClass name="First" location="Ahmedabad - class" age="45-class" />
-        <UserClass name="Second" location="Ahmedabad - class" age="45-class" />
+        {/* <UserClass name="Second" location="Ahmedabad - class" age="45-class" /> */}
       </div>
     );
   }

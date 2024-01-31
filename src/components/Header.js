@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/links";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
@@ -9,39 +10,51 @@ const Header = () => {
   // console.log("rendered");
   // console.log(onlineStatus + "----");
 
+  const userContext = useContext(UserContext);
+  // console.log(userContext);
+
+  const { loggedInUser, loginTime } = userContext;
+
   return (
-    <div className="header">
+    <div className="flex justify-between bg-green-100 shadow-md">
       <div className="logo">
         <Link to="/">
-          <img className="logo-img" src={LOGO_URL} />
+          <img className="w-36" src={LOGO_URL} />
         </Link>
       </div>
-      <div className="nav-container">
-        <ul className="nav-items">
+      <div className="py-14 text-lg">
+        <ul className="flex">
           <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li>
-          <li>
+          <li className="px-2 hover:font-bold">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="px-2 hover:font-bold">
             <Link to="/about">About Us</Link>
           </li>
-          <li>
+          <li className="px-2 hover:font-bold">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>
+          <li className="px-2 hover:font-bold">
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li>
+          <li className="px-2 hover:font-bold">
             <a href="/about">Cart</a>
           </li>
-          <button
-            className="login-btn"
-            onClick={() => {
-              btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
-            }}
-          >
-            {btnName}
-          </button>
+          <li className="px-2 hover:font-bold">
+            <button
+              className="login-btn"
+              onClick={() => {
+                btnName === "Login"
+                  ? setBtnName("Logout")
+                  : setBtnName("Login");
+              }}
+            >
+              {btnName}
+            </button>
+          </li>
+          <li className="px-2 hover:font-bold">
+            {loggedInUser} at {loginTime}
+          </li>
         </ul>
       </div>
     </div>

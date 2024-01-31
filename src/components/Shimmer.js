@@ -1,19 +1,16 @@
 const Shimmer = () => {
   return (
-    <div className="shimmer-container">
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
-      <div className="shimmer-card"></div>
+    <div className="flex flex-wrap">
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
+      <div className="bg-gray-200 w-[230px] h-[230px] m-1 rounded-md mt-3"></div>
     </div>
   );
 };

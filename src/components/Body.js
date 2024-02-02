@@ -25,35 +25,8 @@ const Body = () => {
   const PromotedRestaurants = withPromotedLabel(SwiggyCardContainer);
 
   const fetchData = async () => {
-    const data = await fetch(SWIGGY_API_URL);
     // const data = await fetch(
-    //   "https://www.swiggy.com/api/seo/getListing?lat=23.144477092557135&lng=72.59576804274302",
-    //   {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: {
-    //       isFiltered: false,
-    //       facets: {},
-    //       seoParams: {
-    //         apiName: "CityPage",
-    //         brandId: "",
-    //         seoUrl: "www.swiggy.com/city/ahmedabad/veg-restaurants",
-    //         pageType: "CITY_PURE_VEG_PAGE",
-    //       },
-    //       widgetOffset: {
-    //         NewListingView_category_bar_chicletranking_TwoRows: "",
-    //         NewListingView_category_bar_chicletranking_TwoRows_Rendition: "",
-    //         Restaurant_Group_WebView_SEO_PB_Theme: "",
-    //         collectionV5RestaurantListWidget_SimRestoRelevance_food_seo: "41",
-    //         inlineFacetFilter: "",
-    //         restaurantCountWidget: "",
-    //       },
-    //       nextOffset: "CJY7ELQ4KICg9vn0sJCIcjDUEDgD",
-    //     },
-    //   }
-    // );
+    const data = await fetch(SWIGGY_API_URL);
     const jsonData = await data.json();
     allRestaurants = await jsonData?.data?.success?.cards[1]?.card?.card
       ?.gridElements?.infoWithStyle?.restaurants;
@@ -76,9 +49,11 @@ const Body = () => {
     return <h1>You seem offline. Please check your internet connection</h1>;
 
   const user = useContext(UserContext);
-  console.log(user);
+  // console.log(user);
+
   const { loggedInUser, setUserInfo, loginTime } = user;
   // console.log(restaurants);
+
 
   return restaurants.length === 0 ? (
     <Shimmer />

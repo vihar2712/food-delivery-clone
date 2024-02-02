@@ -12,6 +12,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 // import Shimmer from "./components/Shimmer";
 
 /*
@@ -55,17 +58,19 @@ const AppLayout = () => {
   }, []);
   return (
     <div>
-      <UserContext.Provider
-        value={{
-          loggedInUser: userInfo.name,
-          loginTime: userInfo.dob,
-          setUserInfo,
-        }}
-      >
-        <Header />
-        <Outlet />
-        {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
-      </UserContext.Provider>
+      <Provider store={appStore}>
+        <UserContext.Provider
+          value={{
+            loggedInUser: userInfo.name,
+            loginTime: userInfo.dob,
+            setUserInfo,
+          }}
+        >
+          <Header />
+          <Outlet />
+          {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
+        </UserContext.Provider>
+      </Provider>
     </div>
   );
 };
@@ -94,6 +99,7 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
+      { path: "/cart", element: <Cart /> },
     ],
     errorElement: <Error />,
   },

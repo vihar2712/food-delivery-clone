@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ItemList from "./ItemList";
 
 const RestaurantCategory = ({
@@ -16,7 +15,7 @@ const RestaurantCategory = ({
   return (
     <div>
       {/* Header */}
-      <div className="bg-gray-50 my-4 mx-auto p-4  w-6/12 shadow-lg cursor-pointer">
+      <div className="bg-gray-50 my-4 mx-auto p-4  sm:w-9/12 md:w-6/12 shadow-lg cursor-pointer">
         <div className="flex justify-between" onClick={handleClick}>
           <span className="font-bold text-xl">
             {title} ({itemCards.length})

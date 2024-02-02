@@ -3,6 +3,7 @@ import { LOGO_URL } from "../utils/links";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
@@ -14,6 +15,11 @@ const Header = () => {
   // console.log(userContext);
 
   const { loggedInUser, loginTime } = userContext;
+
+  // Selector is used to subscribe to the appStore
+
+  const cartItems = useSelector((store) => store.cartR.items);
+  // console.log(cartItems);
 
   return (
     <div className="flex justify-between bg-green-100 shadow-md">
@@ -38,7 +44,7 @@ const Header = () => {
             <Link to="/grocery">Grocery</Link>
           </li>
           <li className="px-2 hover:font-bold">
-            <a href="/about">Cart</a>
+            <Link to="/cart">Cart ({cartItems.length} items)</Link>
           </li>
           <li className="px-2 hover:font-bold">
             <button

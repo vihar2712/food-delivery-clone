@@ -56,14 +56,14 @@ test("should filter Restaurants by clicking filter button ", async () => {
   console.log(cardsAfterFilter.length);
 
   expect(cardsAfterFilter.length).toBe(8);
-//   const unFilterBtn = screen.getByRole("button", { name: "Top Rated ❌" });
-//   console.log(unFilterBtn);
-  
-//   fireEvent.click(unFilterBtn);
-//   console.log("back to normal");
+  const unFilterBtn = screen.getByRole("button", { name: "Top Rated ❌" });
+  console.log(unFilterBtn);
 
-//     const cardsBackToNormal = screen.getAllByTestId("resCard");
-//     console.log(cardsBackToNormal.length);
+    fireEvent.click(unFilterBtn);
+    console.log("back to normal");
+
+  //     const cardsBackToNormal = screen.getAllByTestId("resCard");
+  //     console.log(cardsBackToNormal.length);
 
   //   expect(cardsBackToNormal.length).toBe(10);
 });

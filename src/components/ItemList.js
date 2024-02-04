@@ -22,7 +22,10 @@ const ItemList = ({ data }) => {
   };
 
   return (
-    <div className="border-b-2 p-4 flex justify-between">
+    <div
+      className="border-b-2 p-4 flex justify-between"
+      data-testid="foodItems"
+    >
       <div className="w-9/12 px-2">
         <span className="text-lg">{name}</span>
         <p> ₹ {price / 100 || defaultPrice / 100}</p>
@@ -34,7 +37,7 @@ const ItemList = ({ data }) => {
           <button
             className="bg-white shadow-md rounded-md px-3 py-2 absolute -bottom-2 left-1/3 font-bold hover:shadow-lg"
             onClick={() => {
-              handleAddItem(data);
+              handleAddItem();
               incrementCounter();
             }}
           >

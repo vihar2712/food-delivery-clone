@@ -8,6 +8,6 @@ const appStore = configureStore({
     // user: userReducer => reducer of other slices which may be present inside our redux store
   },
 });
-console.log(appStore.getState());
+// console.log(appStore.getState());
 
 export default appStore;

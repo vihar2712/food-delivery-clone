@@ -54,15 +54,15 @@ const Body = () => {
   const { loggedInUser, setUserInfo, loginTime } = user;
   // console.log(restaurants);
 
-
   return restaurants.length === 0 ? (
-    <Shimmer />
+    <Shimmer  />
   ) : (
     <div>
       <div className="flex p-4">
         <input
           type="text"
           id="search"
+          data-testid="searchInput"
           className="border border-solid border-black"
           value={searchText}
           onChange={(event) => {

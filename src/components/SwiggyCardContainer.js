@@ -3,14 +3,14 @@ import { ALT_IMAGE_URL, SWIGGY_IMAGE_URL } from "../utils/links";
 import UserContext from "../utils/UserContext";
 
 const SwiggyCardContainer = (props) => {
-  // console.log(props.resData.info);
+  // console.log(props.resData);
 
   const { name, cloudinaryImageId, avgRating, cuisines, costForTwo, sla } =
     props.resData.info;
 
   const { loggedInUser, loginTime } = useContext(UserContext);
   return (
-    <div className="p-2">
+    <div className="p-2" data-testid="resCard">
       <img
         src={SWIGGY_IMAGE_URL + cloudinaryImageId}
         alt={name}
@@ -30,6 +30,7 @@ const SwiggyCardContainer = (props) => {
 
 export const withPromotedLabel = (RestaurantCard) => {
   return (props) => {
+    
     return (
       <div>
         <label className="bg-black absolute text-white rounded-md mt-1 p-1">

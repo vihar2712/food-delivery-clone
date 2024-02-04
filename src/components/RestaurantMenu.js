@@ -20,8 +20,11 @@ const RestaurantMenu = () => {
   cards = cards.filter(
     (item) =>
       item?.card?.card?.["@type"] ===
-      "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory" ||
+      item?.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory"
   );
+  // console.log(cards);
 
   return (
     <div>
@@ -35,9 +38,9 @@ const RestaurantMenu = () => {
       {cards.map((itemObj, index) => {
         // console.log(itemObj);
 
-        const { itemCards, title } = itemObj?.card?.card;
+        const { itemCards, title, categories } = itemObj?.card?.card;
         // console.log(itemCards);
-        if (itemCards) {
+        if (itemCards || categories) {
           return (
             <RestaurantCategory
               category={itemObj}

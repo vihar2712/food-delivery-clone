@@ -6,7 +6,8 @@ const RestaurantCategory = ({
   showIndexFunction,
   collapseItems,
 }) => {
-  const { title, itemCards } = category?.card?.card;
+  const { title, itemCards, categories } = category?.card?.card;
+  // console.log(itemCards, categories);
 
   const handleClick = () => {
     showIndexFunction();
@@ -18,13 +19,13 @@ const RestaurantCategory = ({
       <div className="bg-gray-50 my-4 mx-auto p-4  sm:w-9/12 md:w-6/12 shadow-lg cursor-pointer">
         <div className="flex justify-between" onClick={handleClick}>
           <span className="font-bold text-xl">
-            {title} ({itemCards.length})
+            {title} ({itemCards?.length || categories[0]?.itemCards?.length})
           </span>
           <span className="text-md"> {showItems ? "▲" : "▼"}</span>
         </div>
         {/* items */}
         <div>
-          {itemCards.map(
+          {(itemCards || categories[0]?.itemCards).map(
             (item) =>
               showItems && <ItemList data={item} key={item?.card?.info?.id} />
           )}

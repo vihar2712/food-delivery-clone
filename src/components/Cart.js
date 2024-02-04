@@ -7,7 +7,7 @@ const Cart = () => {
   const clearCartItems = () => {
     dispatch(clearCart());
   };
-  const cartItems = useSelector((store) => store.cart.items);
+  const cartItems = useSelector((store) => store.cartR.items);
   return (
     <div>
       <div className="w-6/12 mx-auto text-center">

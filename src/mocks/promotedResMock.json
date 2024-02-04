@@ -1,0 +1,72 @@
+{
+    "info": {
+        "id": "36780",
+        "name": "Kabir Restaurant",
+        "cloudinaryImageId": "cqmmjxbgwqt844sjpecy",
+        "locality": "Gurukul",
+        "areaName": "Gurukul",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+            "Indian",
+            "Gujarati",
+            "Chinese",
+            "South Indian",
+            "Snacks"
+        ],
+        "avgRating": 4.5,
+        "parentId": "7631",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "10K+",
+        "promoted": true,
+        "adTrackingId": "cid=10958330~p=1~eid=0000018d-6dc4-6fc8-2fe2-9d3300bc0141~srvts=1706943606728~45995",
+        "sla": {
+            "deliveryTime": 18,
+            "lastMileTravel": 3.8,
+            "serviceability": "SERVICEABLE",
+            "slaString": "18 mins",
+            "lastMileTravelString": "3.8 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-02-03 15:30:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textExtendedBadges": {},
+                "textBased": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "60% OFF",
+            "subHeader": "UPTO ₹120"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "swiggy://menu?restaurant_id=36780",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+    }
+}

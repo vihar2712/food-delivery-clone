@@ -120,14 +120,14 @@ const Body = () => {
         /> */}
       </div>
 
-      <div className="flex flex-wrap justify-start ml-16">
+      <div className="grid grid-cols-12 mx-10 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32">
         {filteredRestaurants.map((restaurant) => {
           const { id, promoted } = restaurant.info;
           return (
             <Link
               key={id}
               to={"/restaurants/" + id}
-              className="w-52 bg-gray-100 rounded-md m-3  hover:bg-gray-200 hover:scale-95"
+              className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-3 hover:scale-95"
             >
               {promoted ? (
                 <PromotedRestaurants resData={restaurant} />

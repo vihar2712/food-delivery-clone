@@ -4,12 +4,24 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useDispatch, useSelector } from "react-redux";
-import { showLoginDisplay } from "../utils/userSlice";
+import { removeUserInfo, showLoginDisplay } from "../utils/userSlice";
+import { signOut } from "firebase/auth";
+import { auth } from "../utils/firebase";
 
 const Header = () => {
   const dispatch = useDispatch();
-  const [btnName, setBtnName] = useState("Login");
-  const onlineStatus = useOnlineStatus();
+  // const onlineStatus = useOnlineStatus();
+  const userInfo = useSelector((store) => store.user?.userInfo);
+  const handleSignOut = () => {
+    signOut(auth)
+      .then(() => {
+        // Sign-out successful.
+        dispatch(removeUserInfo());
+      })
+      .catch((error) => {
+        // An error happened.
+      });
+  };
   // console.log("rendered");
   // console.log(onlineStatus + "----");
 
@@ -43,20 +55,25 @@ const Header = () => {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li className="px-2 hover:font-bold">
-            <Link to="/grocery">Grocery</Link>
-          </li>
-          <li className="px-2 hover:font-bold">
             <Link to="/cart">Cart ({cartItems.length} items)</Link>
           </li>
-          <li className="px-2 hover:font-bold">
-            <button
-              className="login-btn"
-              onClick={() => {
-                dispatch(showLoginDisplay());
-              }}
-            >
-              Log In
-            </button>
+
+          <li className="px-2 mr-2 hover:font-bold">
+            {userInfo ? (
+              <>
+                <button onClick={handleSignOut}>
+                  {userInfo.displayName} (Sign Out)
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={() => {
+                  dispatch(showLoginDisplay(true));
+                }}
+              >
+                Login
+              </button>
+            )}
           </li>
           {/* <li className="px-2 hover:font-bold">
             {loggedInUser} at {loginTime}

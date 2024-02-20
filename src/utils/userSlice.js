@@ -4,14 +4,23 @@ const userSlice = createSlice({
   name: "user",
   initialState: {
     loginDisplay: false,
+    userInfo: null,
   },
   reducers: {
-    showLoginDisplay: (state) => {
-      state.loginDisplay = !state.loginDisplay;
+    showLoginDisplay: (state, action) => {
+      state.loginDisplay = action.payload;
+    },
+    addUserInfo: (state, action) => {
+      state.userInfo = action.payload;
+    },
+
+    removeUserInfo: (state) => {
+      state.userInfo = null;
     },
   },
 });
 
-export const { showLoginDisplay } = userSlice.actions;
+export const { showLoginDisplay, addUserInfo, removeUserInfo } =
+  userSlice.actions;
 
 export default userSlice.reducer;

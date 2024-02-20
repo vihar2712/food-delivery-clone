@@ -48,30 +48,30 @@ const About = lazy(() => import("./components/About"));
 
 const AppLayout = () => {
   const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
-  const [userInfo, setUserInfo] = useState("");
+  // const [userInfo, setUserInfo] = useState("");
 
-  useEffect(() => {
-    // calling API to get the user name
-    const data = {
-      name: " Vihar Shah",
-      dob: 121171,
-    };
-    setUserInfo(data);
-  }, []);
+  // useEffect(() => {
+  //   // calling API to get the user name
+  //   const data = {
+  //     name: " Vihar Shah",
+  //     dob: 121171,
+  //   };
+  //   setUserInfo(data);
+  // }, []);
   return (
     <div>
-      <UserContext.Provider
+      {/* <UserContext.Provider
         value={{
           loggedInUser: userInfo.name,
           loginTime: userInfo.dob,
           setUserInfo,
         }}
-      >
+      > */}
         <Header />
         <Outlet />
         {showLoginDisplay && <Login />}
         {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
-      </UserContext.Provider>
+      {/* </UserContext.Provider> */}
     </div>
   );
 };

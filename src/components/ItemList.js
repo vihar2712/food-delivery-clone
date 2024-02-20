@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SWIGGY_IMAGE_URL } from "../utils/links";
+import { ALT_IMAGE_URL, SWIGGY_IMAGE_URL } from "../utils/links";
 import { useDispatch } from "react-redux";
 import { addItem, removeItem } from "../utils/cartSlice";
 
@@ -29,10 +29,13 @@ const ItemList = ({ data }) => {
       <div className="w-9/12 px-2">
         <span className="text-lg">{name}</span>
         <p> ₹ {price / 100 || defaultPrice / 100}</p>
-        <p className="text-sm text-gray-600">{description}</p>
+        {description && <p className="text-sm text-gray-600">{description}</p>}
       </div>
       <div className="w-3/12 relative">
-        <img src={SWIGGY_IMAGE_URL + imageId} className="rounded-lg h-full" />
+        <img
+          src={SWIGGY_IMAGE_URL + imageId}
+          className="rounded-lg h-[150px] w-full"
+        />
         {counter == 0 ? (
           <button
             className="bg-white shadow-md rounded-md px-3 py-2 absolute -bottom-2 left-1/3 font-bold hover:shadow-lg"

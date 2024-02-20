@@ -3,18 +3,20 @@ import { LOGO_URL } from "../utils/links";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { showLoginDisplay } from "../utils/userSlice";
 
 const Header = () => {
+  const dispatch = useDispatch();
   const [btnName, setBtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
   // console.log("rendered");
   // console.log(onlineStatus + "----");
 
-  const userContext = useContext(UserContext);
+  // const userContext = useContext(UserContext);
   // console.log(userContext);
 
-  const { loggedInUser, loginTime } = userContext;
+  // const { loggedInUser, loginTime } = userContext;
 
   // Selector is used to subscribe to the appStore
 
@@ -22,7 +24,7 @@ const Header = () => {
   // console.log(cartItems);
 
   return (
-    <div className="flex justify-between bg-green-100 shadow-md">
+    <div className="flex justify-between bg-green-100 shadow-md sticky top-0 z-10">
       <div className="logo">
         <Link to="/">
           <img className="w-36" src={LOGO_URL} />
@@ -30,7 +32,7 @@ const Header = () => {
       </div>
       <div className="py-14 text-lg">
         <ul className="flex">
-          <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li>
+          {/* <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li> */}
           <li className="px-2 hover:font-bold">
             <Link to="/">Home</Link>
           </li>
@@ -50,17 +52,15 @@ const Header = () => {
             <button
               className="login-btn"
               onClick={() => {
-                btnName === "Login"
-                  ? setBtnName("Logout")
-                  : setBtnName("Login");
+                dispatch(showLoginDisplay());
               }}
             >
-              {btnName}
+              Log In
             </button>
           </li>
-          <li className="px-2 hover:font-bold">
+          {/* <li className="px-2 hover:font-bold">
             {loggedInUser} at {loginTime}
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

@@ -8,7 +8,7 @@ const SwiggyCardContainer = (props) => {
   const { name, cloudinaryImageId, avgRating, cuisines, costForTwo, sla } =
     props.resData.info;
 
-  const { loggedInUser, loginTime } = useContext(UserContext);
+  // const { loggedInUser, loginTime } = useContext(UserContext);
   return (
     <div className="p-2" data-testid="resCard">
       <img
@@ -21,9 +21,9 @@ const SwiggyCardContainer = (props) => {
       <h4> Ratings: {avgRating ? avgRating : "New"}</h4>
       <h4>{costForTwo}</h4>
       <h4>ETA: {sla.slaString}</h4>
-      <h4>
+      {/* <h4>
         User: {loggedInUser} at {loginTime}
-      </h4>
+      </h4> */}
     </div>
   );
 };

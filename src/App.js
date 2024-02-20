@@ -12,9 +12,10 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import UserContext from "./utils/UserContext";
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
+import Login from "./components/Login";
 // import Shimmer from "./components/Shimmer";
 
 /*
@@ -46,6 +47,7 @@ const Grocery = lazy(() => import("./components/Grocery"));
 const About = lazy(() => import("./components/About"));
 
 const AppLayout = () => {
+  const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
   const [userInfo, setUserInfo] = useState("");
 
   useEffect(() => {
@@ -58,19 +60,18 @@ const AppLayout = () => {
   }, []);
   return (
     <div>
-      <Provider store={appStore}>
-        <UserContext.Provider
-          value={{
-            loggedInUser: userInfo.name,
-            loginTime: userInfo.dob,
-            setUserInfo,
-          }}
-        >
-          <Header />
-          <Outlet />
-          {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
-        </UserContext.Provider>
-      </Provider>
+      <UserContext.Provider
+        value={{
+          loggedInUser: userInfo.name,
+          loginTime: userInfo.dob,
+          setUserInfo,
+        }}
+      >
+        <Header />
+        <Outlet />
+        {showLoginDisplay && <Login />}
+        {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
+      </UserContext.Provider>
     </div>
   );
 };
@@ -109,4 +110,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render(<AppLayout />);
 
-root.render(<RouterProvider router={router} />);
+root.render(
+  <>
+    <Provider store={appStore}>
+      <RouterProvider router={router} />
+    </Provider>
+  </>
+);

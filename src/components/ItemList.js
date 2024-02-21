@@ -1,18 +1,77 @@
 import { useState } from "react";
 import { ALT_IMAGE_URL, SWIGGY_IMAGE_URL } from "../utils/links";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addItem, removeItem } from "../utils/cartSlice";
 
 const ItemList = ({ data }) => {
-  const { name, price, defaultPrice, description, imageId } = data?.card?.info;
+  const { name, price, defaultPrice, description, imageId, id } =
+    data?.card?.info;
+  let i = 0;
   const [counter, setCounter] = useState(0);
+  const cart = useSelector((store) => store.cartR?.items);
+  // console.log(cart);
 
   const dispatch = useDispatch();
   const handleAddItem = () => {
-    dispatch(addItem(data));
+    const found = cart.find((element) => element.itemId === id);
+    console.log(found);
+
+    if (!found) {
+      console.log("cart empty");
+
+      dispatch(
+        addItem({
+          itemId: id,
+          quantity: 1,
+        })
+      );
+    }
+    cart.map((item) => {
+      console.log(item);
+      let { itemId, quantity } = item;
+      console.log(itemId, quantity);
+
+      // console.log(quantity, itemInfo, data.card.info.id);
+      console.log(data.card.info.id, itemId);
+
+      if (data.card.info.id === itemId) {
+        console.log("equal");
+        quantity += 1;
+        dispatch(removeItem(itemId));
+        dispatch(
+          addItem({
+            itemId,
+            quantity,
+          })
+        );
+      }
+    });
   };
   const handleRemoveItem = () => {
-    dispatch(removeItem(data));
+    cart.map((item) => {
+      console.log(item);
+      let { itemId, quantity } = item;
+      console.log(itemId, quantity);
+
+      // console.log(quantity, itemInfo, data.card.info.id);
+      console.log(data.card.info.id, itemId);
+
+      if (data.card.info.id === itemId) {
+        console.log("equal");
+        if (quantity === 1) {
+          dispatch(removeItem(itemId));
+        } else {
+          quantity -= 1;
+          dispatch(removeItem(itemId));
+          dispatch(
+            addItem({
+              itemId,
+              quantity,
+            })
+          );
+        }
+      }
+    });
   };
   const incrementCounter = () => {
     setCounter(counter + 1);

@@ -25,7 +25,7 @@ const Login = () => {
       password.current?.value,
       name.current?.value
     );
-    console.log(validationResult);
+    // console.log(validationResult);
 
     if (isSignUp) {
       //sign up validation
@@ -44,7 +44,7 @@ const Login = () => {
             })
               .then(() => {
                 // Profile updated!
-                console.log(auth.currentUser);
+                // console.log(auth.currentUser);
                 const { uid, email, displayName } = auth.currentUser;
                 dispatch(
                   addUserInfo({
@@ -82,7 +82,7 @@ const Login = () => {
           .then((userCredential) => {
             // Signed in
             const user = userCredential.user;
-            console.log(user);
+            // console.log(user);
           })
           .catch((error) => {
             const errorMessage = error.message;
@@ -99,7 +99,7 @@ const Login = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties
-        console.log(user);
+        // console.log(user);
         const { uid, email, displayName } = user;
         dispatch(
           addUserInfo({

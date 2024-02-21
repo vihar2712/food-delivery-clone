@@ -18,7 +18,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
   const [change, setChange] = useState(true);
   const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
-  console.log(showLoginDisplay);
+  // console.log(showLoginDisplay);
 
   // console.log("2");
   // debugger;

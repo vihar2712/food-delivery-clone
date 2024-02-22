@@ -1,46 +1,55 @@
 import { useState } from "react";
 import { ALT_IMAGE_URL, SWIGGY_IMAGE_URL } from "../utils/links";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, removeItem } from "../utils/cartSlice";
+import {
+  addItem,
+  addPriceInCart,
+  removeItem,
+  subtractPriceInCart,
+} from "../utils/cartSlice";
 
 const ItemList = ({ data }) => {
-  const { name, price, defaultPrice, description, imageId, id } =
-    data?.card?.info;
-  let i = 0;
+  const dispatch = useDispatch();
+  const { name, price, defaultPrice, description, imageId, id } = data;
+  const totalItemPrice = (price || defaultPrice) / 100;
   const [counter, setCounter] = useState(0);
   const cart = useSelector((store) => store.cartR?.items);
-  // console.log(cart);
+  const found = cart.find((element) => element.itemInfo.id === id);
+  let itemQuantity = found ? found.quantity : 0;
+  // console.log(itemQuantity);
 
-  const dispatch = useDispatch();
+  // let itemQuantity = found.quantity ? found.quantity : 0;
   const handleAddItem = () => {
-    const found = cart.find((element) => element.itemId === id);
-    console.log(found);
-
+    const found = cart.find((element) => element.itemInfo.id === id);
     if (!found) {
       console.log("cart empty");
-
+      dispatch(addPriceInCart(totalItemPrice));
+      // console.log(totalItemPrice);
       dispatch(
         addItem({
-          itemId: id,
+          itemInfo: data,
           quantity: 1,
         })
       );
     }
     cart.map((item) => {
-      console.log(item);
-      let { itemId, quantity } = item;
-      console.log(itemId, quantity);
-
+      // console.log(item);
+      let { itemInfo, quantity } = item;
+      // console.log(itemId, quantity);
       // console.log(quantity, itemInfo, data.card.info.id);
-      console.log(data.card.info.id, itemId);
+      // console.log(data.card.info.id, itemId);
 
-      if (data.card.info.id === itemId) {
-        console.log("equal");
+      if (id === itemInfo.id) {
+        // console.log("equal");
+        dispatch(addPriceInCart(totalItemPrice));
+        console.log(totalItemPrice);
         quantity += 1;
-        dispatch(removeItem(itemId));
+
+        dispatch(removeItem(id));
+
         dispatch(
           addItem({
-            itemId,
+            itemInfo: data,
             quantity,
           })
         );
@@ -49,23 +58,24 @@ const ItemList = ({ data }) => {
   };
   const handleRemoveItem = () => {
     cart.map((item) => {
-      console.log(item);
-      let { itemId, quantity } = item;
-      console.log(itemId, quantity);
+      // console.log(item);
+      let { itemInfo, quantity } = item;
+      // console.log(itemId, quantity);
 
       // console.log(quantity, itemInfo, data.card.info.id);
-      console.log(data.card.info.id, itemId);
+      // console.log(data.card.info.id, itemId);
 
-      if (data.card.info.id === itemId) {
+      if (id === itemInfo.id) {
+        dispatch(subtractPriceInCart(totalItemPrice));
         console.log("equal");
         if (quantity === 1) {
-          dispatch(removeItem(itemId));
+          dispatch(removeItem(id));
         } else {
           quantity -= 1;
-          dispatch(removeItem(itemId));
+          dispatch(removeItem(id));
           dispatch(
             addItem({
-              itemId,
+              itemInfo: data,
               quantity,
             })
           );
@@ -95,7 +105,7 @@ const ItemList = ({ data }) => {
           src={SWIGGY_IMAGE_URL + imageId}
           className="rounded-lg h-[150px] w-full"
         />
-        {counter == 0 ? (
+        {itemQuantity === 0 ? (
           <button
             className="bg-white shadow-md rounded-md px-3 py-2 absolute -bottom-2 left-1/3 font-bold hover:shadow-lg"
             onClick={() => {
@@ -117,7 +127,7 @@ const ItemList = ({ data }) => {
               {" "}
               -{" "}
             </div>
-            <div>{counter}</div>
+            <div>{itemQuantity}</div>
             <div
               onClick={() => {
                 handleAddItem();

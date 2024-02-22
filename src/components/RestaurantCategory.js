@@ -1,4 +1,6 @@
+import { useSelector } from "react-redux";
 import ItemList from "./ItemList";
+import Toast from "./Toast";
 
 const RestaurantCategory = ({
   category,
@@ -7,6 +9,7 @@ const RestaurantCategory = ({
   collapseItems,
 }) => {
   const { title, itemCards, categories } = category?.card?.card;
+  const cart = useSelector((store) => store.cartR?.items);
   // console.log(itemCards, categories);
 
   const handleClick = () => {
@@ -25,10 +28,11 @@ const RestaurantCategory = ({
         </div>
         {/* items */}
         <div>
-          {(itemCards || categories[0]?.itemCards).map(
-            (item) =>
-              showItems && <ItemList data={item} key={item?.card?.info?.id} />
-          )}
+          {(itemCards || categories[0]?.itemCards).map((item) => {
+            return (
+              showItems && <ItemList data={item.card.info} key={item?.card?.info?.id} />
+            );
+          })}
         </div>
       </div>
     </div>

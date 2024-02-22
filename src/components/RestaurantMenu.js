@@ -4,11 +4,15 @@ import RestaurantCategory from "./RestaurantCategory";
 import { useState } from "react";
 import HomeShimmer from "./Shimmer";
 import { ALT_IMAGE_URL, SWIGGY_IMAGE_URL } from "../utils/links";
+import { useSelector } from "react-redux";
+import Toast from "./Toast";
 
 const RestaurantMenu = () => {
   const [showIndex, setShowIndex] = useState(null);
   const params = useParams();
   const { id } = params;
+
+  const cart = useSelector((store) => store.cartR?.items);
 
   const allInfo = useRestaurantMenu(id);
   if (allInfo === null) return <HomeShimmer />;
@@ -35,8 +39,8 @@ const RestaurantMenu = () => {
 
   return (
     <div>
-      <div className="m-4 flex flex-col p-2 border-dotted border-b-2 w-6/12 mx-auto text-left">
-        <div className="flex justify-between ">
+      <div className="m-4 flex flex-col p-2 border-dotted border-b-2 w-full sm:w-9/12 md:w-6/12 mx-auto text-left">
+        <div className="flex justify-around md:justify-between ">
           <div>
             <h1 className="font-bold text-2xl">{name}</h1>
             <p>{cuisines.join(", ")}</p>
@@ -46,7 +50,7 @@ const RestaurantMenu = () => {
           </div>
           <img
             src={SWIGGY_IMAGE_URL + cloudinaryImageId}
-            className="w-36 rounded-lg"
+            className="w-28 sm:w-32 md:w-36 rounded-lg"
             alt={ALT_IMAGE_URL}
           />
         </div>
@@ -68,6 +72,7 @@ const RestaurantMenu = () => {
           );
         }
       })}
+      {cart.length > 0 && <Toast />}
     </div>
   );
 };

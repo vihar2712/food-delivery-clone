@@ -121,15 +121,7 @@ const Login = () => {
   return (
     <div>
       <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 z-10 opacity-75"></div>
-      <div
-        style={{
-          left: "auto",
-          right: 0 + "px",
-          transform: "translate(" + 0 + "%," + 0 + "px)",
-          transition: "transform .3s ease-out",
-        }}
-        className="fixed top-0 h-full bg-white z-20 border-black p-10 sm:w-4/12"
-      >
+      <div className="_3vi_e fixed top-0 right-0 bg-white z-20 h-full border-black p-10 sm:w-4/12 anime">
         <div className="flex justify-between">
           <div>
             <button
@@ -142,7 +134,7 @@ const Login = () => {
             </button>
             <h1 className="text-2xl mb-4">{isSignUp ? "Sign Up" : "Log In"}</h1>
             <button
-              className="mx-auto w-full hover:underline"
+              className="mx-auto w-full hover:underline text-green-600 font-bold"
               onClick={() => setIsSignUp(!isSignUp)}
             >
               {isSignUp ? "Already a user? Log In." : "New here ? Sign up now."}
@@ -183,7 +175,7 @@ const Login = () => {
             className="p-6 border-x-gray-500 border-b-gray-500 border"
             required
           />
-          <button className="bg-gray-200 p-2 mt-8 rounded-lg hover:bg-gray-400">
+          <button className="bg-green-600 text-white font-semibold p-2 mt-8 rounded-lg hover:text-gray-200">
             {isSignUp ? "Continue" : "Log In"}
           </button>
           {errMsg && <h1 className="text-red-600">{errMsg}</h1>}

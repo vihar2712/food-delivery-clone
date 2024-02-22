@@ -4,10 +4,11 @@ const cartSlice = createSlice({
   name: "cart",
   initialState: {
     items: [],
+    cartTotalPrice: 0,
   },
   reducers: {
     addItem: (state, action) => {
-      state.items.push(action.payload);
+      state.items.unshift(action.payload);
       // RTK says either mutate a state or return a new state, you can't do both. so we can not write the push operation without {}
       //  addItem: (state, action) =>  state.items.push(action.payload);
     },
@@ -18,12 +19,16 @@ const cartSlice = createSlice({
       // immutable state based off those changes
 
       state.items = state.items.filter(
-        (item) => item.itemId !== action.payload
+        (item) => item.itemInfo.id !== action.payload
       );
-      console.log(state.items);
       // state.items.pop();
     },
-    updateItem: (state) => {},
+    addPriceInCart: (state, action) => {
+      state.cartTotalPrice += action.payload;
+    },
+    subtractPriceInCart: (state, action) => {
+      state.cartTotalPrice -= action.payload;
+    },
     clearCart: (state) => {
       // RTK says either mutate a state or return a new state, you can't do both.
       // 1st way
@@ -46,5 +51,11 @@ reducer,
 }
 */
 
-export const { addItem, removeItem, clearCart } = cartSlice.actions;
+export const {
+  addItem,
+  removeItem,
+  clearCart,
+  addPriceInCart,
+  subtractPriceInCart,
+} = cartSlice.actions;
 export default cartSlice.reducer;

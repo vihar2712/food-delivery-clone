@@ -59,7 +59,7 @@ const AppLayout = () => {
   //   setUserInfo(data);
   // }, []);
   return (
-    <div>
+    <div className="h-full">
       {/* <UserContext.Provider
         value={{
           loggedInUser: userInfo.name,
@@ -67,10 +67,10 @@ const AppLayout = () => {
           setUserInfo,
         }}
       > */}
-        <Header />
-        <Outlet />
-        {showLoginDisplay && <Login />}
-        {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
+      <Header />
+      <Outlet />
+      {showLoginDisplay && <Login />}
+      {/* Outlet tag will get replaced by the corresponding children route Component based on the route */}
       {/* </UserContext.Provider> */}
     </div>
   );

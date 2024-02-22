@@ -1,11 +1,24 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Toast = () => {
+  const cartItems = useSelector((store) => store.cartR?.items);
+  // console.log(cartItems);
+  let totalQuantity = cartItems?.reduce(
+    (newLength, item) => newLength + item.quantity,
+    0
+  );
   return (
-    <div>
-      
+    <div className=" sm:w-9/12 md:w-6/12 mx-auto pt-14">
+      <div className="bg-green-600 text-white font-semibold fixed bottom-0 mx-auto px-2 py-3 rounded-tl-sm rounded-tr-sm w-full sm:w-9/12 md:w-6/12 shadow-lg flex justify-between text-lg">
+        <h1 className="mx-3">{totalQuantity} items added</h1>
+        <Link to="/cart" className="hover:underline mx-3">
+          View Cart
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Toast
+export default Toast;

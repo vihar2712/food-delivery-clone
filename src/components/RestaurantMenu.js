@@ -6,6 +6,7 @@ import HomeShimmer from "./Shimmer";
 import { ALT_IMAGE_URL, SWIGGY_IMAGE_URL } from "../utils/links";
 import { useSelector } from "react-redux";
 import Toast from "./Toast";
+import Warning from "./Warning";
 
 const RestaurantMenu = () => {
   const [showIndex, setShowIndex] = useState(null);
@@ -13,6 +14,7 @@ const RestaurantMenu = () => {
   const { id } = params;
 
   const cart = useSelector((store) => store.cartR?.items);
+  const warning = useSelector((store) => store.cartR?.warning);
 
   const allInfo = useRestaurantMenu(id);
   if (allInfo === null) return <HomeShimmer />;
@@ -73,6 +75,7 @@ const RestaurantMenu = () => {
         }
       })}
       {cart.length > 0 && <Toast />}
+      {warning && <Warning />}
     </div>
   );
 };

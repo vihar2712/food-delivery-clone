@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const clearCartItems = () => {
-    dispatch(clearCart());
-  };
+  // const clearCartItems = () => {
+  //   dispatch(clearCart());
+  // };
   const cartItems = useSelector((store) => store.cartR.items);
   const cartTotalPrice = useSelector((store) => store.cartR.cartTotalPrice);
+  console.log(cartTotalPrice);
+
   console.log(cartItems);
 
   if (cartTotalPrice === 0) return <EmptyCart />;

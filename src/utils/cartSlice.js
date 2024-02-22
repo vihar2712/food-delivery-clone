@@ -1,10 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { act } from "react-dom/test-utils";
 
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
     items: [],
     cartTotalPrice: 0,
+    resId: null,
+    warning: false,
   },
   reducers: {
     addItem: (state, action) => {
@@ -37,10 +40,16 @@ const cartSlice = createSlice({
       // return state;
 
       // 2nd way
-      //   state.items.length = 0;
+      state.items.length = 0;
 
       // 3rd way
-      return { items: [] };
+      // return { items: [] };
+    },
+    addResId: (state, action) => {
+      state.resId = action.payload;
+    },
+    setWarning: (state, action) => {
+      state.warning = action.payload;
     },
   },
 });
@@ -57,5 +66,7 @@ export const {
   clearCart,
   addPriceInCart,
   subtractPriceInCart,
+  addResId,
+  setWarning,
 } = cartSlice.actions;
 export default cartSlice.reducer;

@@ -4,57 +4,66 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   addItem,
   addPriceInCart,
+  addResId,
   removeItem,
+  setWarning,
   subtractPriceInCart,
 } from "../utils/cartSlice";
+import { useParams } from "react-router-dom";
 
 const ItemList = ({ data }) => {
+  const resId = useParams().id;
   const dispatch = useDispatch();
   const { name, price, defaultPrice, description, imageId, id } = data;
-  const totalItemPrice = (price || defaultPrice) / 100;
-  const [counter, setCounter] = useState(0);
+  const totalItemPrice = (price || defaultPrice) / 100 || 0;
   const cart = useSelector((store) => store.cartR?.items);
   const found = cart.find((element) => element.itemInfo.id === id);
   let itemQuantity = found ? found.quantity : 0;
-  // console.log(itemQuantity);
+  const storeResId = useSelector((store) => store.cartR?.resId);
+  console.log(itemQuantity);
 
   // let itemQuantity = found.quantity ? found.quantity : 0;
   const handleAddItem = () => {
-    const found = cart.find((element) => element.itemInfo.id === id);
-    if (!found) {
-      console.log("cart empty");
-      dispatch(addPriceInCart(totalItemPrice));
-      // console.log(totalItemPrice);
-      dispatch(
-        addItem({
-          itemInfo: data,
-          quantity: 1,
-        })
-      );
-    }
-    cart.map((item) => {
-      // console.log(item);
-      let { itemInfo, quantity } = item;
-      // console.log(itemId, quantity);
-      // console.log(quantity, itemInfo, data.card.info.id);
-      // console.log(data.card.info.id, itemId);
-
-      if (id === itemInfo.id) {
-        // console.log("equal");
+    if (resId === storeResId || !storeResId || cart.length === 0) {
+      dispatch(addResId(resId));
+      const found = cart.find((element) => element.itemInfo.id === id);
+      if (!found) {
+        console.log("cart empty");
         dispatch(addPriceInCart(totalItemPrice));
-        console.log(totalItemPrice);
-        quantity += 1;
-
-        dispatch(removeItem(id));
-
+        // console.log(totalItemPrice);
         dispatch(
           addItem({
             itemInfo: data,
-            quantity,
+            quantity: 1,
           })
         );
       }
-    });
+      cart.map((item) => {
+        // console.log(item);
+        let { itemInfo, quantity } = item;
+        // console.log(itemId, quantity);
+        // console.log(quantity, itemInfo, data.card.info.id);
+        // console.log(data.card.info.id, itemId);
+
+        if (id === itemInfo.id) {
+          // console.log("equal");
+          dispatch(addPriceInCart(totalItemPrice));
+          console.log(totalItemPrice);
+          quantity += 1;
+
+          dispatch(removeItem(id));
+
+          dispatch(
+            addItem({
+              itemInfo: data,
+              quantity,
+            })
+          );
+        }
+      });
+    } else {
+      dispatch(setWarning(true));
+    }
   };
   const handleRemoveItem = () => {
     cart.map((item) => {
@@ -83,13 +92,6 @@ const ItemList = ({ data }) => {
       }
     });
   };
-  const incrementCounter = () => {
-    setCounter(counter + 1);
-  };
-  const decrementCounter = () => {
-    setCounter(counter - 1);
-  };
-
   return (
     <div
       className="border-b-2 p-4 flex justify-between"
@@ -110,7 +112,6 @@ const ItemList = ({ data }) => {
             className="bg-white shadow-md rounded-md px-3 py-2 absolute -bottom-2 left-1/3 font-bold hover:shadow-lg"
             onClick={() => {
               handleAddItem();
-              incrementCounter();
             }}
           >
             Add
@@ -120,7 +121,6 @@ const ItemList = ({ data }) => {
             <div
               onClick={() => {
                 handleRemoveItem();
-                decrementCounter();
               }}
               className="text-xl hover:scale-90"
             >
@@ -131,9 +131,8 @@ const ItemList = ({ data }) => {
             <div
               onClick={() => {
                 handleAddItem();
-                incrementCounter();
               }}
-              className="text-xl hover:scale-90 "
+              className="text-xl hover:scale-90"
             >
               {" "}
               +{" "}

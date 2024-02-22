@@ -9,7 +9,6 @@ const RestaurantCategory = ({
   collapseItems,
 }) => {
   const { title, itemCards, categories } = category?.card?.card;
-  const cart = useSelector((store) => store.cartR?.items);
   // console.log(itemCards, categories);
 
   const handleClick = () => {

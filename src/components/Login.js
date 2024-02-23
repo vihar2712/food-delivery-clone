@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 import { addUserInfo, showLoginDisplay } from "../utils/userSlice";
 import { validateData } from "../utils/validateData";
 import {
   createUserWithEmailAndPassword,
-  onAuthStateChanged,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
@@ -12,7 +11,6 @@ import { auth } from "../utils/firebase";
 
 const Login = () => {
   const dispatch = useDispatch();
-  const userInfo = useSelector((store) => store.user.userInfo);
   const [isSignUp, setIsSignUp] = useState(false);
   const [errMsg, setErrMsg] = useState(null);
   const name = useRef(null);
@@ -30,6 +28,7 @@ const Login = () => {
     if (isSignUp) {
       //sign up validation
       if (!validationResult) {
+        const enteredName = name.current.value;
         createUserWithEmailAndPassword(
           auth,
           email.current.value,
@@ -38,13 +37,17 @@ const Login = () => {
           .then((userCredential) => {
             // Signed up
             const user = userCredential.user;
-            user.displayName = name.current.value;
+            console.log("auth.currentUser= ", auth.currentUser);
+            // console.log('name= ',name.current.value);
+            console.log("user= ", user);
+
             updateProfile(user, {
-              displayName: name.current.value,
+              displayName: enteredName,
             })
               .then(() => {
                 // Profile updated!
-                // console.log(auth.currentUser);
+                console.log("profile updated = ,", auth.currentUser);
+
                 const { uid, email, displayName } = auth.currentUser;
                 dispatch(
                   addUserInfo({
@@ -57,10 +60,11 @@ const Login = () => {
               })
               .catch((error) => {
                 // An error occurred
+                console.log(error.message);
+
                 setErrMsg(error.message);
               });
-
-            // console.log(user);
+            console.log(user);
           })
           .catch((error) => {
             const errorMessage = error.message;
@@ -94,29 +98,6 @@ const Login = () => {
       }
     }
   };
-
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        // User is signed in, see docs for a list of available properties
-        // console.log(user);
-        const { uid, email, displayName } = user;
-        dispatch(
-          addUserInfo({
-            uid,
-            email,
-            displayName,
-          })
-        );
-        dispatch(showLoginDisplay(false));
-
-        // ...
-      } else {
-        // User is signed out
-        // ...
-      }
-    });
-  }, []);
 
   return (
     <div>

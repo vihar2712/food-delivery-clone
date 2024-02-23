@@ -70,50 +70,54 @@ const Body = () => {
     <HomeShimmer />
   ) : (
     <div className="bg-gray-100">
-      <div className="flex p-4 justify-center text-lg">
-        <input
-          type="text"
-          id="search"
-          ref={refText}
-          data-testid="searchInput"
-          className="border border-solid border-black p-2 rounded-md mx-2"
-          placeholder="search for restaurants...."
-          value={searchText}
-          onChange={(event) => {
-            setSearchText(event.target.value);
-            const filteredRes = restaurants.filter((res) => {
-              return res.info.name
-                .toLowerCase()
-                .includes(refText.current.value.toLowerCase());
-            });
-            setFilteredRestaurants(filteredRes);
-          }}
-        />
-        <button className="px-4 bg-white rounded-md ml-1 mr-3 hover:shadow-lg">
-          Search
-        </button>
-        <button
-          className=" bg-white rounded-md px-4 hover:shadow-lg"
-          onClick={() => {
-            let filteredData = filteredRestaurants.filter(
-              // (res) => res.info.rating.aggregate_rating >= 4
-              (res) => res.info.avgRating >= 4
-            );
+      <div className="flex flex-col sm:flex-row p-4 justify-center text-lg items-center">
+        <div className="">
+          <input
+            type="text"
+            id="search"
+            ref={refText}
+            data-testid="searchInput"
+            className="border border-solid border-black p-2 rounded-md mx-2"
+            placeholder="search for restaurants...."
+            value={searchText}
+            onChange={(event) => {
+              setSearchText(event.target.value);
+              const filteredRes = restaurants.filter((res) => {
+                return res.info.name
+                  .toLowerCase()
+                  .includes(refText.current.value.toLowerCase());
+              });
+              setFilteredRestaurants(filteredRes);
+            }}
+          />
+        </div>
+        <div className="mt-2">
+          <button className="px-4 bg-white rounded-md ml-1 mr-3 hover:shadow-lg">
+            Search
+          </button>
+          <button
+            className=" bg-white rounded-md px-4 hover:shadow-lg"
+            onClick={() => {
+              let filteredData = filteredRestaurants.filter(
+                // (res) => res.info.rating.aggregate_rating >= 4
+                (res) => res.info.avgRating >= 4
+              );
 
-            if (change) {
-              setFilteredRestaurants(filteredData);
-              // console.log(restaurants);
-            } else {
-              setRestaurants(allRestaurants);
-              fetchData();
-              // console.log(restaurants);
-            }
-            setChange(!change);
-            // console.log(change);
-          }}
-        >
-          {change ? "Top Rated" : "Top Rated ❌"}
-        </button>
+              if (change) {
+                setFilteredRestaurants(filteredData);
+                // console.log(restaurants);
+              } else {
+                setRestaurants(allRestaurants);
+                fetchData();
+                // console.log(restaurants);
+              }
+              setChange(!change);
+              // console.log(change);
+            }}
+          >
+            {change ? "Top Rated" : "Top Rated ❌"}
+          </button>
+        </div>
         {/* <input
           type="text"
           className="border border-solid border-black mx-2"

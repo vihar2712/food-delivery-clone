@@ -1,16 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
-import {
-  clearCart,
-  setWarning,
-  subtractPriceInCart,
-} from "../utils/cartSlice";
+import { clearCart, setWarning, subtractPriceInCart } from "../utils/cartSlice";
 
 // component for warning the user to discard the current cart and create a new one for the new restaurant.
 const Warning = () => {
   const dispatch = useDispatch();
   const cartTotalPrice = useSelector((store) => store.cartR?.cartTotalPrice);
   return (
-    <div className=" sm:w-9/12 md:w-6/12 mx-auto pt-14 ">
+    <div className=" sm:w-9/12 xl:w-6/12 mx-auto pt-14 ">
       <div className="bg-white  border border-black fixed bottom-20 mx-auto px-2 py-3 rounded-tl-sm rounded-tr-sm w-full sm:w-9/12 md:w-6/12 shadow-lg  text-lg">
         <h1 className="font-bold">Items already in cart</h1>
         <p className="text-gray-700">

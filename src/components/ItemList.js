@@ -97,18 +97,25 @@ const ItemList = ({ data }) => {
       data-testid="foodItems"
     >
       <div className="w-9/12 px-2">
-        <span className="text-lg">{name}</span>
-        <p> ₹ {price / 100 || defaultPrice / 100}</p>
-        {description && <p className="text-sm text-gray-600">{description}</p>}
+        <span className="text-md sm:text-lg font-semibold text-gray-700">
+          {name}
+        </span>
+        <p className="text-sm sm:text-md">
+          {" "}
+          ₹ {price / 100 || defaultPrice / 100}
+        </p>
+        {description && (
+          <p className="text-xs sm:text-sm text-gray-600">{description}</p>
+        )}
       </div>
-      <div className="w-3/12 relative">
+      <div className="w-3/12 relative h-fit">
         <img
           src={SWIGGY_IMAGE_URL + imageId}
-          className="rounded-lg h-[150px] w-full"
+          className="rounded-lg h-[90px] sm:h-[150px] w-full"
         />
         {itemQuantity === 0 ? (
           <button
-            className="bg-white shadow-md rounded-md px-3 py-2 absolute -bottom-2 left-1/3 font-bold hover:shadow-lg"
+            className="bg-white shadow-md rounded-md py-1 w-11/12 md:w-6/12 md:left-1/4 absolute -bottom-2 left-0.5 sm:left-1.5 font-bold hover:shadow-lg"
             onClick={() => {
               handleAddItem();
             }}
@@ -116,12 +123,12 @@ const ItemList = ({ data }) => {
             Add
           </button>
         ) : (
-          <div className="bg-white shadow-md rounded-md w-6/12 py-2 absolute -bottom-2 left-1/4 font-bold hover:shadow-lg flex justify-around text-lg">
+          <div className="bg-white shadow-md rounded-md w-9/12 sm:w-6/12 px-1 absolute -bottom-2 left-2 sm:left-1/4 font-bold hover:shadow-lg flex justify-around text-md">
             <div
               onClick={() => {
                 handleRemoveItem();
               }}
-              className="text-xl hover:scale-90"
+              className="text-lg hover:scale-90"
             >
               {" "}
               -{" "}
@@ -131,7 +138,7 @@ const ItemList = ({ data }) => {
               onClick={() => {
                 handleAddItem();
               }}
-              className="text-xl hover:scale-90"
+              className="text-lg hover:scale-90"
             >
               {" "}
               +{" "}

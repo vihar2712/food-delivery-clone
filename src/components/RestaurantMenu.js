@@ -48,7 +48,7 @@ const RestaurantMenu = () => {
             <p>{cuisines.join(", ")}</p>
             <p>{areaName}</p>
             <p>{costForTwoMessage}</p>
-            <p>ETA: {sla.slaString.toLowerCase()}</p>
+            {/* <p>ETA: {sla.slaString.toLowerCase()}</p> */}
           </div>
           <img
             src={SWIGGY_IMAGE_URL + cloudinaryImageId}

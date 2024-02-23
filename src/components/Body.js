@@ -33,13 +33,18 @@ const Body = () => {
     // const data = await fetch(
     const data = await fetch(SWIGGY_API_URL);
     const jsonData = await data.json();
-    allRestaurants = await jsonData?.data?.success?.cards[1]?.card?.card
-      ?.gridElements?.infoWithStyle?.restaurants;
+    console.log(jsonData);
+
+    allRestaurants = await jsonData?.data?.cards[1]?.card?.card?.gridElements
+      ?.infoWithStyle?.restaurants;
+
+    // allRestaurants = await jsonData?.data?.success?.cards[1]?.card?.card
+    //   ?.gridElements?.infoWithStyle?.restaurants;
 
     // allRestaurants = await jsonData?.data?.success?.cards[1]?.gridWidget
     //   ?.gridElements?.infoWithStyle?.restaurants;
 
-    // console.log(allRestaurants);
+    console.log(allRestaurants);
 
     setRestaurants(allRestaurants);
     setFilteredRestaurants(allRestaurants);
@@ -57,7 +62,7 @@ const Body = () => {
   // console.log(user);
 
   // const { loggedInUser, setUserInfo, loginTime } = user;
-  // console.log(restaurants);
+  console.log(restaurants);
 
   return restaurants.length === 0 ? (
     <HomeShimmer />

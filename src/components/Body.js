@@ -2,7 +2,7 @@
 
 import { useContext, useEffect, useRef, useState } from "react";
 import SwiggyCardContainer, { withPromotedLabel } from "./SwiggyCardContainer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { SWIGGY_API_URL, SWIGGY_API_URL_2 } from "../utils/links";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
@@ -13,6 +13,7 @@ import Header from "./Header";
 
 const Body = () => {
   // const [restaurants, setRestaurants] = useState(zomatoData);
+  const navigate = useNavigate();
   const [restaurants, setRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -34,7 +35,7 @@ const Body = () => {
     // const data = await fetch(
     const data = await fetch(SWIGGY_API_URL);
     const jsonData = await data.json();
-    console.log(jsonData);
+    // console.log(jsonData);
 
     allRestaurants = await jsonData?.data?.cards[1]?.card?.card?.gridElements
       ?.infoWithStyle?.restaurants;
@@ -45,7 +46,7 @@ const Body = () => {
     // allRestaurants = await jsonData?.data?.success?.cards[1]?.gridWidget
     //   ?.gridElements?.infoWithStyle?.restaurants;
 
-    console.log(allRestaurants);
+    // console.log(allRestaurants);
 
     setRestaurants(allRestaurants);
     setFilteredRestaurants(allRestaurants);
@@ -63,7 +64,7 @@ const Body = () => {
   // console.log(user);
 
   // const { loggedInUser, setUserInfo, loginTime } = user;
-  console.log(restaurants);
+  // console.log(restaurants);
 
   return restaurants.length === 0 ? (
     <HomeShimmer />
@@ -127,17 +128,17 @@ const Body = () => {
         {filteredRestaurants.map((restaurant) => {
           const { id, promoted } = restaurant.info;
           return (
-            <Link
+            <div
               key={id}
-              to={"/restaurants/" + id}
-              className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-3 hover:scale-95"
+              onClick={() => navigate("/restaurants/" + id)}
+              className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-3 hover:scale-95 hover:cursor-pointer"
             >
               {promoted ? (
                 <PromotedRestaurants resData={restaurant} />
               ) : (
                 <SwiggyCardContainer resData={restaurant} />
               )}
-            </Link>
+            </div>
           );
         })}
       </div>

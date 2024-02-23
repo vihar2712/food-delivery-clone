@@ -49,20 +49,20 @@ const Header = () => {
       <div className="text-lg py-10">
         <ul className="flex">
           {/* <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li> */}
-          <li className="px-2 hover:font-bold">
+          <li className="px-2 hover:font-semibold hover:text-green-700">
             <Link to="/">Home</Link>
           </li>
-          {/* <li className="px-2 hover:font-bold">
+          {/* <li className="px-2 hover:font-semibold hover:text-green-700">
             <Link to="/about">About Us</Link>
           </li> */}
           <li className="px-2 hover:font-semibold hover:text-green-700">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li className="px-2 hover:font-bold">
+          <li className="px-2 hover:font-semibold hover:text-green-700">
             <Link to="/cart">Cart ({totalQuantity} items)</Link>
           </li>
 
-          <li className="px-2 mr-2 hover:font-bold">
+          <li className="px-2 hover:font-semibold hover:text-green-700">
             {userInfo ? (
               <>
                 <button onClick={handleSignOut}>

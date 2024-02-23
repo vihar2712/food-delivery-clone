@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { ALT_IMAGE_URL, SWIGGY_IMAGE_URL } from "../utils/links";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addItem,
@@ -26,7 +24,7 @@ const CartItemsList = ({ data }) => {
       if (id === itemInfo.id) {
         // console.log("equal");
         const totalItemPrice = (price || defaultPrice) / 100;
-        console.log(totalItemPrice);
+        // console.log(totalItemPrice);
         dispatch(addPriceInCart(totalItemPrice));
         quantity += 1;
         dispatch(removeItem(id));
@@ -78,11 +76,6 @@ const CartItemsList = ({ data }) => {
         <p> ₹ {price / 100 || defaultPrice / 100}</p>
       </div>
       <div className="w-3/12 relative">
-        {/* <img
-          src={SWIGGY_IMAGE_URL + imageId}
-          className="rounded-lg h-[150px] w-full"
-        /> */}
-
         <div className="bg-white shadow-md rounded-md w-11/12 sm:w-9/12 md:w-6/12 py-2 absolute -bottom-4 left-1/4 font-bold hover:shadow-lg flex justify-around text-lg">
           <div
             onClick={() => {

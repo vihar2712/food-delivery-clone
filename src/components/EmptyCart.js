@@ -8,9 +8,9 @@ const EmptyCart = () => {
         <h1 className="text-xl font-bold">Your Cart is empty!! </h1>
         <Link
           to="/"
-          className="bg-green-600 p-2 mt-2 text-white font-semibold hover:text-gray-200 text-lg"
+          className="bg-green-600 p-2 mt-2 text-white font-semibold hover:shadow-lg text-lg"
         >
-          See Restaurants near you{" "}
+          See Restaurants near you
         </Link>
       </div>
     </div>

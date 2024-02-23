@@ -16,11 +16,11 @@ const ItemList = ({ data }) => {
   const dispatch = useDispatch();
   const { name, price, defaultPrice, description, imageId, id } = data;
   const totalItemPrice = (price || defaultPrice) / 100 || 0;
+
   const cart = useSelector((store) => store.cartR?.items);
   const found = cart.find((element) => element.itemInfo.id === id);
   let itemQuantity = found ? found.quantity : 0;
   const storeResId = useSelector((store) => store.cartR?.resId);
-  console.log(itemQuantity);
 
   // let itemQuantity = found.quantity ? found.quantity : 0;
   const handleAddItem = () => {
@@ -28,7 +28,7 @@ const ItemList = ({ data }) => {
       dispatch(addResId(resId));
       const found = cart.find((element) => element.itemInfo.id === id);
       if (!found) {
-        console.log("cart empty");
+        // console.log("cart empty");
         dispatch(addPriceInCart(totalItemPrice));
         // console.log(totalItemPrice);
         dispatch(
@@ -48,7 +48,6 @@ const ItemList = ({ data }) => {
         if (id === itemInfo.id) {
           // console.log("equal");
           dispatch(addPriceInCart(totalItemPrice));
-          console.log(totalItemPrice);
           quantity += 1;
 
           dispatch(removeItem(id));

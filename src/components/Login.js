@@ -175,7 +175,7 @@ const Login = () => {
             className="p-6 border-x-gray-500 border-b-gray-500 border"
             required
           />
-          <button className="bg-green-600 text-white font-semibold p-2 mt-8 rounded-lg hover:text-gray-200">
+          <button className="bg-green-600 text-white font-semibold p-2 mt-8 rounded-lg hover:shadow-lg">
             {isSignUp ? "Continue" : "Log In"}
           </button>
           {errMsg && <h1 className="text-red-600">{errMsg}</h1>}

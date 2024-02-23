@@ -27,10 +27,14 @@ const cartSlice = createSlice({
       // state.items.pop();
     },
     addPriceInCart: (state, action) => {
-      state.cartTotalPrice += action.payload;
+      state.cartTotalPrice = Number.parseFloat(
+        (state.cartTotalPrice + action.payload).toFixed(2)
+      );
     },
     subtractPriceInCart: (state, action) => {
-      state.cartTotalPrice -= action.payload;
+      state.cartTotalPrice = Number.parseFloat(
+        (state.cartTotalPrice - action.payload).toFixed(2)
+      );
     },
     clearCart: (state) => {
       // RTK says either mutate a state or return a new state, you can't do both.

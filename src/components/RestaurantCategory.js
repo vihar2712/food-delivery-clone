@@ -29,7 +29,9 @@ const RestaurantCategory = ({
         <div>
           {(itemCards || categories[0]?.itemCards).map((item) => {
             return (
-              showItems && <ItemList data={item.card.info} key={item?.card?.info?.id} />
+              showItems && (
+                <ItemList data={item.card.info} key={item?.card?.info?.id}  />
+              )
             );
           })}
         </div>

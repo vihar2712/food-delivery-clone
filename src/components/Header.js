@@ -40,22 +40,22 @@ const Header = () => {
   );
 
   return (
-    <div className="flex justify-between bg-green-100 shadow-md sticky top-0 z-10">
+    <div className="flex justify-between bg-white shadow-md sticky top-0 z-10">
       <div className="logo">
         <Link to="/">
-          <img className="w-36" src={LOGO_URL} />
+          <img className="w-28" src={LOGO_URL} />
         </Link>
       </div>
-      <div className="py-14 text-lg">
+      <div className="text-lg py-10">
         <ul className="flex">
           {/* <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li> */}
           <li className="px-2 hover:font-bold">
             <Link to="/">Home</Link>
           </li>
-          <li className="px-2 hover:font-bold">
+          {/* <li className="px-2 hover:font-bold">
             <Link to="/about">About Us</Link>
-          </li>
-          <li className="px-2 hover:font-bold">
+          </li> */}
+          <li className="px-2 hover:font-semibold hover:text-green-700">
             <Link to="/contact">Contact Us</Link>
           </li>
           <li className="px-2 hover:font-bold">

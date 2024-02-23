@@ -1,6 +1,6 @@
 // Constructing UI with Live Swiggy API
 
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import SwiggyCardContainer, { withPromotedLabel } from "./SwiggyCardContainer";
 import { Link } from "react-router-dom";
 import { SWIGGY_API_URL, SWIGGY_API_URL_2 } from "../utils/links";
@@ -16,6 +16,7 @@ const Body = () => {
   const [restaurants, setRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const refText = useRef(null);
   const [change, setChange] = useState(true);
   const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
   // console.log(showLoginDisplay);
@@ -67,34 +68,31 @@ const Body = () => {
   return restaurants.length === 0 ? (
     <HomeShimmer />
   ) : (
-    <div>
+    <div className="bg-gray-100">
       <div className="flex p-4 justify-center text-lg">
         <input
           type="text"
           id="search"
+          ref={refText}
           data-testid="searchInput"
           className="border border-solid border-black p-2 rounded-md mx-2"
           placeholder="search for restaurants...."
           value={searchText}
           onChange={(event) => {
             setSearchText(event.target.value);
-          }}
-        />
-        <button
-          className="px-4 bg-gray-100 rounded-md ml-1 mr-3"
-          onClick={() => {
             const filteredRes = restaurants.filter((res) => {
               return res.info.name
                 .toLowerCase()
-                .includes(searchText.toLowerCase());
+                .includes(refText.current.value.toLowerCase());
             });
             setFilteredRestaurants(filteredRes);
           }}
-        >
+        />
+        <button className="px-4 bg-white rounded-md ml-1 mr-3 hover:shadow-lg">
           Search
         </button>
         <button
-          className=" bg-gray-100 rounded-md px-4"
+          className=" bg-white rounded-md px-4 hover:shadow-lg"
           onClick={() => {
             let filteredData = filteredRestaurants.filter(
               // (res) => res.info.rating.aggregate_rating >= 4

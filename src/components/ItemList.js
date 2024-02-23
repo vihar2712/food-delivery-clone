@@ -24,7 +24,7 @@ const ItemList = ({ data }) => {
 
   // let itemQuantity = found.quantity ? found.quantity : 0;
   const handleAddItem = () => {
-    if (resId === storeResId || !storeResId || cart.length === 0) {
+    if (resId === storeResId || cart.length === 0) {
       dispatch(addResId(resId));
       const found = cart.find((element) => element.itemInfo.id === id);
       if (!found) {

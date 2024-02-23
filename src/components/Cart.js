@@ -19,7 +19,7 @@ const Cart = () => {
 
   return (
     <div className="bg-gray-200 pt-4 h-full">
-      <div className="w-11/12 sm:w-9/12 md:w-6/12 relative left-2 md:left-10 top-5 md:top-20 bg-white rounded-sm">
+      <div className="w-11/12 sm:w-9/12 md:w-6/12 relative left-2 md:left-10  bg-white rounded-sm">
         <div className="flex p-2">
           <img
             src={SWIGGY_IMAGE_URL + cloudinaryImageId}
@@ -30,9 +30,11 @@ const Cart = () => {
             <h1>{areaName}</h1>
           </div>
         </div>
-        {cartItems.map((item) => (
-          <CartItemsList data={item} key={item.itemInfo.id} />
-        ))}
+        <div className="h-[400px] overflow-y-scroll">
+          {cartItems.map((item) => (
+            <CartItemsList data={item} key={item.itemInfo.id} />
+          ))}
+        </div>
         <div className="m-2 p-2 flex justify-end">
           <h1 className="text- font-bold">
             Total : ₹ {cartTotalPrice.toFixed(2)}

@@ -67,13 +67,10 @@ const CartItemsList = ({ data }) => {
   };
 
   return (
-    <div
-      className="border-b-2 p-2 md:p-4 flex justify-between items-center"
-      data-testid="foodItems"
-    >
-      <div className="w-6/12 md:px-2">
+    <div className="border-b-2 p-2 md:p-4 flex justify-between items-center ">
+      <div className="w-4/12 md:px-2 flex flex-col">
         <span className="text-md">{name}</span>
-        <p> ₹ {price / 100 || defaultPrice / 100}</p>
+        <span> ₹ {price / 100 || defaultPrice / 100}</span>
       </div>
       <div className="w-3/12 relative">
         <div className="bg-white shadow-md rounded-md w-11/12 sm:w-9/12 md:w-6/12 py-2 absolute -bottom-4 left-1/4 font-bold hover:shadow-lg flex justify-around text-lg">

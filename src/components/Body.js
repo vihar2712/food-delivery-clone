@@ -128,24 +128,30 @@ const Body = () => {
         /> */}
       </div>
 
-      <div className="grid grid-cols-12 mx-10 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32">
-        {filteredRestaurants.map((restaurant) => {
-          const { id, promoted } = restaurant.info;
-          return (
-            <div
-              key={id}
-              onClick={() => navigate("/restaurants/" + id)}
-              className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-3 hover:scale-95 hover:cursor-pointer"
-            >
-              {promoted ? (
-                <PromotedRestaurants resData={restaurant} />
-              ) : (
-                <SwiggyCardContainer resData={restaurant} />
-              )}
-            </div>
-          );
-        })}
-      </div>
+      {filteredRestaurants.length > 0 ? (
+        <div className="grid grid-cols-12 mx-10 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32">
+          {filteredRestaurants.map((restaurant) => {
+            const { id, promoted } = restaurant.info;
+            return (
+              <div
+                key={id}
+                onClick={() => navigate("/restaurants/" + id)}
+                className="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 xl:col-span-3 hover:scale-95 hover:cursor-pointer"
+              >
+                {promoted ? (
+                  <PromotedRestaurants resData={restaurant} />
+                ) : (
+                  <SwiggyCardContainer resData={restaurant} />
+                )}
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <div>
+          <h1 className="text-center font-bold">No restaurants found....</h1>
+        </div>
+      )}
       {showLoginDisplay && <Login />}
     </div>
   );

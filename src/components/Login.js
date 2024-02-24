@@ -102,7 +102,7 @@ const Login = () => {
   return (
     <div>
       <div className="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 z-10 opacity-75"></div>
-      <div className="_3vi_e fixed top-0 right-0 bg-white z-20 h-full border-black p-10 sm:w-4/12 anime">
+      <div className="fixed top-0 right-0 bg-white z-20 h-full border-black p-10 sm:w-6/12 md:w-5/12 lg:w-4/12 anime">
         <div className="flex justify-between">
           <div>
             <button
@@ -115,7 +115,7 @@ const Login = () => {
             </button>
             <h1 className="text-2xl mb-4">{isSignUp ? "Sign Up" : "Log In"}</h1>
             <button
-              className="mx-auto w-full hover:underline text-green-600 font-bold"
+              className="hover:underline text-green-600 font-bold"
               onClick={() => setIsSignUp(!isSignUp)}
             >
               {isSignUp ? "Already a user? Log In." : "New here ? Sign up now."}
@@ -123,7 +123,7 @@ const Login = () => {
           </div>
           <img
             src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r"
-            className="w-20 mx-10"
+            className="w-14 lg:w-20 xl:ml-10"
           />
         </div>
         <form

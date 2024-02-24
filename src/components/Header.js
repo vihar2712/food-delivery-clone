@@ -49,7 +49,6 @@ const Header = () => {
         // User is signed in, see docs for a list of available properties
         // console.log(user);
         const { uid, email, displayName } = user;
-        console.log(user);
 
         dispatch(
           addUserInfo({
@@ -75,8 +74,8 @@ const Header = () => {
           <img className="w-28" src={LOGO_URL} />
         </Link>
       </div>
-      <div className="sm:text-lg py-10">
-        <ul className="flex">
+      <div className="sm:text-lg py-0 sm:py-10">
+        <ul className="flex text-center flex-wrap justify-center ">
           {/* <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li> */}
           <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
             <Link to="/">Home</Link>
@@ -84,21 +83,27 @@ const Header = () => {
           {/* <li className="px-2 hover:font-semibold hover:text-green-700">
             <Link to="/about">About Us</Link>
           </li> */}
-          <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
+          {/* <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
             <Link to="/contact">Contact Us</Link>
-          </li>
+          </li> */}
           <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
             <Link to="/cart">Cart ({totalQuantity} items)</Link>
           </li>
 
-          <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
+          <li className="px-1 sm:pr-4 text-center ">
             {userInfo ? (
               <>
-                <h1 className="text-center">{userInfo.displayName} </h1>
-                <button onClick={handleSignOut}>(Sign Out)</button>
+                <h1 className="font-medium">Hello, {userInfo.displayName}! </h1>
+                <button
+                  onClick={handleSignOut}
+                  className="hover:font-semibold hover:text-green-700"
+                >
+                  (Sign Out)
+                </button>
               </>
             ) : (
               <button
+                className="hover:font-semibold hover:text-green-700"
                 onClick={() => {
                   dispatch(showLoginDisplay(true));
                 }}

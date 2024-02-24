@@ -59,7 +59,7 @@ const AppLayout = () => {
   //   setUserInfo(data);
   // }, []);
   return (
-    <div className="h-full">
+    <div className="h-full bg-gray-100">
       {/* <UserContext.Provider
         value={{
           loggedInUser: userInfo.name,

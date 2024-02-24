@@ -19,7 +19,7 @@ const Cart = () => {
 
   return (
     <div className="bg-gray-200 pt-4 h-full">
-      <div className="w-11/12 sm:w-9/12 md:w-6/12 relative left-2 md:left-10  bg-white rounded-sm">
+      <div className="w-11/12 sm:w-9/12 md:w-6/12 relative left-0 mx-auto sm:mx-0 sm:left-2 md:left-10  bg-white rounded-sm">
         <div className="flex p-2">
           <img
             src={SWIGGY_IMAGE_URL + cloudinaryImageId}
@@ -30,7 +30,7 @@ const Cart = () => {
             <h1>{areaName}</h1>
           </div>
         </div>
-        <div className="h-[400px] overflow-y-scroll">
+        <div className="h-[400px] overflow-y-auto">
           {cartItems.map((item) => (
             <CartItemsList data={item} key={item.itemInfo.id} />
           ))}

@@ -37,16 +37,16 @@ const Login = () => {
           .then((userCredential) => {
             // Signed up
             const user = userCredential.user;
-            console.log("auth.currentUser= ", auth.currentUser);
+            // console.log("auth.currentUser= ", auth.currentUser);
             // console.log('name= ',name.current.value);
-            console.log("user= ", user);
+            // console.log("user= ", user);
 
             updateProfile(user, {
               displayName: enteredName,
             })
               .then(() => {
                 // Profile updated!
-                console.log("profile updated = ,", auth.currentUser);
+                // console.log("profile updated = ,", auth.currentUser);
 
                 const { uid, email, displayName } = auth.currentUser;
                 dispatch(
@@ -60,11 +60,9 @@ const Login = () => {
               })
               .catch((error) => {
                 // An error occurred
-                console.log(error.message);
 
                 setErrMsg(error.message);
               });
-            console.log(user);
           })
           .catch((error) => {
             const errorMessage = error.message;

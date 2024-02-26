@@ -75,7 +75,7 @@ const ItemList = ({ data }) => {
 
       if (id === itemInfo.id) {
         dispatch(subtractPriceInCart(totalItemPrice));
-        console.log("equal");
+        // console.log("equal");
         if (quantity === 1) {
           dispatch(removeItem(id));
         } else {

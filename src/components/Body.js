@@ -10,13 +10,15 @@ import HomeShimmer from "./Shimmer";
 import Login from "./Login";
 import { useSelector } from "react-redux";
 import Header from "./Header";
+import Filter from "./Filter";
 
 const Body = () => {
-  // const [restaurants, setRestaurants] = useState(zomatoData);
   const navigate = useNavigate();
   const [restaurants, setRestaurants] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
+  let [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const [showFilter, setShowFilter] = useState(false);
+  let [filteredCuisines, setFilteredCuisines] = useState([]);
   const refText = useRef(null);
   const [change, setChange] = useState(true);
   const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
@@ -60,6 +62,27 @@ const Body = () => {
   if (onlineStatus === false)
     return <h1>You seem offline. Please check your internet connection</h1>;
 
+  // console.log(filteredCuisines);
+
+  if (filteredCuisines.length > 0) {
+    let filteredRestaurantsByCuisines = [];
+    filteredRestaurants = restaurants;
+    filteredCuisines.map((cuisine) => {
+      const intermediate = filteredRestaurants.filter((res) =>
+        res.info.cuisines.includes(cuisine)
+      );
+      intermediate.map((res) => filteredRestaurantsByCuisines.push(res));
+    });
+    filteredRestaurantsByCuisines = filteredRestaurantsByCuisines.filter(
+      (item, index) => filteredRestaurantsByCuisines.indexOf(item) === index
+    );
+    // console.log(filteredRestaurantsByCuisines);
+
+    setFilteredCuisines([])
+    // console.log(filteredCuisines);
+
+    setFilteredRestaurants(filteredRestaurantsByCuisines);
+  }
   // const user = useContext(UserContext);
   // console.log(user);
 
@@ -78,25 +101,34 @@ const Body = () => {
             ref={refText}
             data-testid="searchInput"
             className="border border-solid border-black p-2 rounded-md mx-2"
-            placeholder="search for restaurants...."
+            placeholder="search for restaurants,cuisines,areas......"
             value={searchText}
             onChange={(event) => {
               setSearchText(event.target.value);
               const filteredRes = restaurants.filter((res) => {
-                return res.info.name
-                  .toLowerCase()
-                  .includes(refText.current.value.toLowerCase());
+                return (
+                  res.info.name
+                    .toLowerCase()
+                    .includes(refText.current.value.trim().toLowerCase()) ||
+                  res.info.areaName
+                    .toLowerCase()
+                    .includes(refText.current.value.trim().toLowerCase()) ||
+                  res.info.cuisines
+                    .join(" ")
+                    .toLowerCase()
+                    .includes(refText.current.value.trim().toLowerCase())
+                );
               });
               setFilteredRestaurants(filteredRes);
             }}
           />
         </div>
-        <div className="mt-2">
-          <button className="px-4 bg-white rounded-md ml-1 mr-3 hover:shadow-lg">
+        <div className="mt-2 sm:mt-0">
+          <button className="px-4 bg-white rounded-md ml-1 hover:shadow-lg border border-gray-300">
             Search
           </button>
           <button
-            className=" bg-white rounded-md px-4 hover:shadow-lg"
+            className=" bg-white rounded-md px-4 hover:shadow-lg mx-3 border border-gray-300"
             onClick={() => {
               let filteredData = filteredRestaurants.filter(
                 // (res) => res.info.rating.aggregate_rating >= 4
@@ -116,6 +148,12 @@ const Body = () => {
             }}
           >
             {change ? "Top Rated" : "Top Rated ❌"}
+          </button>
+          <button
+            className="px-4 bg-white rounded-md ml-1 hover:shadow-lg border border-gray-300"
+            onClick={() => setShowFilter(true)}
+          >
+            Filter by cuisine
           </button>
         </div>
         {/* <input
@@ -153,6 +191,13 @@ const Body = () => {
         </div>
       )}
       {showLoginDisplay && <Login />}
+      {showFilter && (
+        <Filter
+          showFilterFn={setShowFilter}
+          filteredCuisineFn={(data) => setFilteredCuisines(data)}
+          resetFn={() => setFilteredRestaurants(restaurants)}
+        />
+      )}
     </div>
   );
 };

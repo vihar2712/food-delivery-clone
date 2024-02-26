@@ -16,6 +16,7 @@ import { Provider, useSelector } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
 import Login from "./components/Login";
+import Filter from "./components/Filter";
 // import Shimmer from "./components/Shimmer";
 
 /*
@@ -101,6 +102,7 @@ const router = createBrowserRouter([
         ),
       },
       { path: "/cart", element: <Cart /> },
+      { path: "/filter", element: <Filter /> },
     ],
     errorElement: <Error />,
   },

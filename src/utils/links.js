@@ -11,7 +11,7 @@ export const SWIGGY_API_URL_3 =
   "https://www.swiggy.com/api/seo/getListing?lat=23.144477092557135&lng=72.59576804274302";
   
 export const SWIGGY_API_URL =
-  "https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING";
+  "https://foodfire.onrender.com/api/restaurants?lat=23.0747676&lng=72.535598&page_type=DESKTOP_WEB_LISTING";
 
 export const SWIGGY_MENU_URL =
   "https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=23.0747676&lng=72.535598&&submitAction=ENTER&restaurantId=";

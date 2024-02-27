@@ -34,7 +34,7 @@ const ItemList = ({ data }) => {
         dispatch(
           addItem({
             itemInfo: data,
-            quantity: 1,
+            quantity: 1, 
           })
         );
       }

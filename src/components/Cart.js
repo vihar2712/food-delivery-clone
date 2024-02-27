@@ -1,15 +1,22 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import CartItemsList from "./CartItemsList";
 import EmptyCart from "./EmptyCart";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import { SWIGGY_IMAGE_URL } from "../utils/links";
 import HomeShimmer from "./Shimmer";
+import { clearCart, subtractPriceInCart } from "../utils/cartSlice";
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.cartR.items);
   const cartTotalPrice = useSelector((store) => store.cartR.cartTotalPrice);
   const restaurantId = useSelector((store) => store.cartR.resId);
   const allInfo = useRestaurantMenu(restaurantId);
+
+  const handleClear = () => {
+    dispatch(clearCart());
+    dispatch(subtractPriceInCart(cartTotalPrice));
+  };
 
   if (cartTotalPrice === 0) return <EmptyCart />;
   if (!allInfo) return <HomeShimmer />;
@@ -39,6 +46,14 @@ const Cart = () => {
           <h1 className="text- font-bold">
             Total : ₹ {cartTotalPrice.toFixed(2)}
           </h1>
+        </div>
+        <div className="flex justify-center pb-2">
+          <button
+            className="bg-green-600 font-semibold text-white border border-black p-1 hover:shadow-lg"
+            onClick={() => handleClear()}
+          >
+            CLEAR CART
+          </button>
         </div>
       </div>
     </div>

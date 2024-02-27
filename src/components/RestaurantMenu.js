@@ -40,7 +40,7 @@ const RestaurantMenu = () => {
   // console.log(cards);
 
   return (
-    <div>
+    <div className="bg-gray-100">
       <div className="m-4 flex flex-col p-2 border-dotted border-b-2 w-full sm:w-9/12 md:w-6/12 mx-auto text-left">
         <div className="flex justify-around md:justify-between ">
           <div>

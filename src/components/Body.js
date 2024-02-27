@@ -8,17 +8,19 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import HomeShimmer from "./Shimmer";
 import Login from "./Login";
-import { useSelector } from "react-redux";
-import Header from "./Header";
+import { useDispatch, useSelector } from "react-redux";
 import Filter from "./Filter";
+import { filterCuisineArr } from "../utils/filterSlice";
 
 const Body = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [restaurants, setRestaurants] = useState([]);
   let [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [showFilter, setShowFilter] = useState(false);
   let [filteredCuisines, setFilteredCuisines] = useState([]);
+  const selectedCuisines = useSelector((store) => store.filter?.cuisineArr);
   const refText = useRef(null);
   const [change, setChange] = useState(true);
   const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
@@ -78,7 +80,7 @@ const Body = () => {
     );
     // console.log(filteredRestaurantsByCuisines);
 
-    setFilteredCuisines([])
+    setFilteredCuisines([]);
     // console.log(filteredCuisines);
 
     setFilteredRestaurants(filteredRestaurantsByCuisines);
@@ -89,7 +91,7 @@ const Body = () => {
   // const { loggedInUser, setUserInfo, loginTime } = user;
   // console.log(restaurants);
 
-  return restaurants.length === 0 ? (
+  return restaurants && restaurants.length === 0 ? (
     <HomeShimmer />
   ) : (
     <div className="bg-gray-100">
@@ -141,19 +143,22 @@ const Body = () => {
               } else {
                 setRestaurants(allRestaurants);
                 fetchData();
+                dispatch(filterCuisineArr([]));
                 // console.log(restaurants);
               }
               setChange(!change);
               // console.log(change);
             }}
           >
-            {change ? "Top Rated" : "Top Rated ❌"}
+            {change ? "Top Rated" : "❌ Top Rated"}
           </button>
           <button
             className="px-4 bg-white rounded-md ml-1 hover:shadow-lg border border-gray-300"
             onClick={() => setShowFilter(true)}
           >
-            Filter by cuisine
+            {selectedCuisines.length > 0
+              ? "❌ Filter by cuisine"
+              : "Filter by cuisine"}
           </button>
         </div>
         {/* <input

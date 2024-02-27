@@ -14,6 +14,7 @@ export const cuisines = [
   "Burgers",
   "Salads",
   "Beverages",
+  "Kebabs",
   "American",
   "Cafe",
   "Maharashtrian",

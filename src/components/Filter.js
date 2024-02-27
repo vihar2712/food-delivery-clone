@@ -28,8 +28,8 @@ const Filter = ({ showFilterFn, filteredCuisineFn, resetFn }) => {
   return (
     <>
       <div className="h-full w-full fixed top-0 flex flex-col items-center  bg-gray-700 opacity-50 z-20 "></div>
-      <div className="h-full fixed top-0 w-full flex items-center z-30 ">
-        <div className="w-6/12 mx-auto my-auto bg-white relative p-2">
+      <div className="h-full fixed top-0 w-full flex justify-center items-center z-30 ">
+        <div className="w-6/12 bg-white p-2">
           <h1 className="ms-2 text-md font-medium text-green-700">
             FILTER BY CUISINE
           </h1>
@@ -60,11 +60,11 @@ const Filter = ({ showFilterFn, filteredCuisineFn, resetFn }) => {
                 </div>
               ))}
             </div>
-            <button className="bg-green-600 p-2 m-2 hover:shadow-lg rounded-md">
+            <button className="bg-green-600 p-2 m-2 hover:shadow-lg rounded-md text-white font-medium">
               Apply
             </button>
             <button
-              className="bg-white border-2 border-green-600 p-2 m-2 hover:shadow-lg rounded-md"
+              className="bg-white border-2 border-green-600 p-2 m-2 hover:shadow-lg rounded-md font-medium"
               onClick={() => applyReset()}
             >
               Reset

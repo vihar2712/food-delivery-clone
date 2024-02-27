@@ -71,24 +71,29 @@ const Header = () => {
     <div className="flex flex-col sm:flex-row items-center sm:justify-between bg-white shadow-md sticky top-0 z-10">
       <div className="logo">
         <Link to="/">
-          <img className="w-28" src={LOGO_URL} />
+          <img className="w-28" src={LOGO_URL} alt="logo" />
         </Link>
       </div>
       <div className="sm:text-lg py-0 sm:py-10">
         <ul className="flex text-center flex-wrap justify-center ">
           {/* <li>Online Status : {onlineStatus ? "🟢" : "🔴"}</li> */}
-          <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
-            <Link to="/">Home</Link>
-          </li>
+          <Link to="/">
+            {" "}
+            <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
+              Home
+            </li>
+          </Link>
           {/* <li className="px-2 hover:font-semibold hover:text-green-700">
             <Link to="/about">About Us</Link>
           </li> */}
           {/* <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
             <Link to="/contact">Contact Us</Link>
           </li> */}
-          <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
-            <Link to="/cart">Cart ({totalQuantity} items)</Link>
-          </li>
+          <Link to="/cart">
+            <li className="px-1 sm:px-2 hover:font-semibold hover:text-green-700">
+              Cart ({totalQuantity} items)
+            </li>
+          </Link>
 
           <li className="px-1 sm:pr-4 text-center ">
             {userInfo ? (

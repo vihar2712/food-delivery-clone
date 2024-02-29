@@ -22,7 +22,7 @@ const Cart = () => {
   if (!allInfo) return <HomeShimmer />;
 
   const { name, areaName, cloudinaryImageId } =
-    allInfo?.cards[2]?.card?.card?.info;
+    allInfo?.cards[0]?.card?.card?.info;
 
   return (
     <div className="bg-gray-200 pt-4 h-full">

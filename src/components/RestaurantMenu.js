@@ -26,9 +26,9 @@ const RestaurantMenu = () => {
     costForTwoMessage,
     sla,
     cloudinaryImageId,
-  } = allInfo?.cards[2]?.card?.card?.info;
+  } = allInfo?.cards[0]?.card?.card?.info; // 2,0
 
-  let { cards } = allInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR;
+  let { cards } = allInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR; // 4,2
 
   cards = cards.filter(
     (item) =>

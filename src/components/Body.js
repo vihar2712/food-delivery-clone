@@ -3,7 +3,11 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import SwiggyCardContainer, { withPromotedLabel } from "./SwiggyCardContainer";
 import { Link, useNavigate } from "react-router-dom";
-import { SWIGGY_API_URL, SWIGGY_API_URL_2, SWIGGY_API_URL_3 } from "../utils/links";
+import {
+  SWIGGY_API_URL,
+  SWIGGY_API_URL_2,
+  SWIGGY_API_URL_3,
+} from "../utils/links";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import HomeShimmer from "./Shimmer";
@@ -25,6 +29,7 @@ const Body = () => {
   const [change, setChange] = useState(true);
   const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
   // console.log(showLoginDisplay);
+  console.log(filteredRestaurants);
 
   // console.log("2");
   // debugger;
@@ -37,18 +42,18 @@ const Body = () => {
 
   const fetchData = async () => {
     // const data = await fetch(
-    const data = await fetch(SWIGGY_API_URL_3);
+    const data = await fetch(SWIGGY_API_URL);
     const jsonData = await data.json();
     // console.log(jsonData);
 
-    // allRestaurants = await jsonData?.data?.cards[1]?.card?.card?.gridElements
-    //   ?.infoWithStyle?.restaurants;
+    allRestaurants = await jsonData?.data?.cards[1]?.card?.card?.gridElements
+      ?.infoWithStyle?.restaurants;
 
-    allRestaurants = await jsonData?.data?.success?.cards[1]?.card?.card
-      ?.gridElements?.infoWithStyle?.restaurants;
+    // allRestaurants = await jsonData?.data?.success?.cards[1]?.card?.card
+    //   ?.gridElements?.infoWithStyle?.restaurants;
 
     // allRestaurants = await jsonData?.data?.success?.cards[1]?.gridWidget
-      // ?.gridElements?.infoWithStyle?.restaurants;
+    //   ?.gridElements?.infoWithStyle?.restaurants;
 
     // console.log(allRestaurants);
 

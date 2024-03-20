@@ -3,6 +3,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import SwiggyCardContainer, { withPromotedLabel } from "./SwiggyCardContainer";
 import { Link, useNavigate } from "react-router-dom";
+import SWIGGY_DATA from "../utils/swiggyData.json";
 import {
   SWIGGY_API_URL,
   SWIGGY_API_URL_2,
@@ -42,12 +43,12 @@ const Body = () => {
 
   const fetchData = async () => {
     // const data = await fetch(
-    const data = await fetch(SWIGGY_API_URL);
-    const jsonData = await data.json();
+    // const data = await fetch(SWIGGY_API_URL);
+    // const jsonData = await data.json();
     // console.log(jsonData);
 
-    allRestaurants = await jsonData?.data?.cards[1]?.card?.card?.gridElements
-      ?.infoWithStyle?.restaurants;
+    // allRestaurants = await jsonData?.data?.cards[1]?.card?.card?.gridElements
+    //   ?.infoWithStyle?.restaurants;
 
     // allRestaurants = await jsonData?.data?.success?.cards[1]?.card?.card
     //   ?.gridElements?.infoWithStyle?.restaurants;
@@ -56,7 +57,7 @@ const Body = () => {
     //   ?.gridElements?.infoWithStyle?.restaurants;
 
     // console.log(allRestaurants);
-
+    allRestaurants = SWIGGY_DATA;
     setRestaurants(allRestaurants);
     setFilteredRestaurants(allRestaurants);
   };
@@ -176,7 +177,7 @@ const Body = () => {
         /> */}
       </div>
 
-      {filteredRestaurants.length > 0 ? (
+      {filteredRestaurants?.length > 0 ? (
         <div className="grid grid-cols-12 mx-10 sm:mx-16 md:mx-20 lg:mx-24 xl:mx-32">
           {filteredRestaurants.map((restaurant) => {
             const { id, promoted } = restaurant.info;

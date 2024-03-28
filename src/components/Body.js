@@ -30,7 +30,7 @@ const Body = () => {
   const [change, setChange] = useState(true);
   const showLoginDisplay = useSelector((store) => store.user?.loginDisplay);
   // console.log(showLoginDisplay);
-  console.log(filteredRestaurants);
+  // console.log(filteredRestaurants);
 
   // console.log("2");
   // debugger;
